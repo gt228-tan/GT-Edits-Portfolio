@@ -1,0 +1,311 @@
+.flip {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    margin-left: 15px;
+    perspective: 1000px;
+}
+
+.flip-in {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip:hover .flip-in {
+    transform: rotateY(180deg);
+
+    box-shadow: 0 0 20px rgb(213, 179, 255);
+    ;
+
+}
+
+.ff,
+.fb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.ff {
+    background-color: #bbb;
+    color: black;
+}
+
+.fb {
+    background-color: rgb(227, 156, 255);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.name {
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: -827px;
+    bottom: 120px;
+}
+
+.name p {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+}
+
+.name p:hover {
+    color: rgb(213, 179, 255);
+    ;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding: 3px;
+}
+
+#gt {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    padding: 2px;
+}
+
+.box {
+    display: flex;
+    height: 28px;
+    width: 91px;
+    background-color: rgb(151, 59, 255);
+    position: absolute;
+    top: 0px;
+    opacity: 20%;
+}
+
+
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 34px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+
+    color: white;
+    border-color: rgb(217, 183, 255);
+    ;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(38, 18, 60);
+}
+
+.vidtut p {
+    font-size: 25px;
+    color: white;
+    margin: 13px 38px;
+    font-weight: bold;
+}
+
+video {
+
+    width: 336px;
+    height: 540px;
+    border-radius: 8px;
+    padding: -9px;
+    margin: -8px 13px;
+}
+
+
+
+.socials {
+    width: 80%;
+}
+
+.socials img {
+    position: relative;
+    align-items: center;
+    top: -23px;
+    left: 371px;
+
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+}
+
+.socials img#yt {
+    width: 150px;
+    height: 100px;
+}
+
+.socials img#yt:hover {
+    background-color: red;
+    border-radius: 20px;
+}
+
+.socials img#insta:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    border-radius: 20px;
+}
+
+.socials img#x:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.socials img#dc:hover {
+    background-color: #5865F2;
+    border-radius: 20px;
+}
+
+.socials img#lin:hover {
+    background-color: #004cff;
+    border-radius: 20px;
+}
+
+.socials img#be:hover {
+    background-color: #053eff;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .flip{
+        padding: 1%;
+    }
+
+
+    .flip-in {
+
+       
+        left: 0%;
+        
+        position: absolute;
+        width: 50%;
+        height: 50%;
+
+    }
+
+
+
+    .name {
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        right: 300px;
+        bottom: 100px;
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .name p {
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .name p:hover {
+        color: rgb(213, 179, 255);
+        ;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .column {
+        float: left;
+        width: 20%;
+        padding: 0 7px;
+    }
+
+    .row {
+        margin: 0 -2px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 2px;
+        text-align: center;
+
+        color: white;
+        border-color: rgb(217, 183, 255);
+        ;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+    }
+
+    .card:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(38, 18, 60);
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .card h3 {
+        font-size: 12px;
+    }
+
+    video {
+
+        width: 115px;
+        height: 300px;
+        border-radius: 8px;
+        padding: 2px;
+        margin: 0 10px;
+
+    }
+    .socials img {
+        position: relative;
+        align-items: center;
+        top: -23px;
+        left: 40px;
+    
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+    }
+    
+    .socials img#yt {
+        width: 75px;
+        height: 50px;
+    }
+}

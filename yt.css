@@ -1,0 +1,128 @@
+p{
+    font-size: 25px;
+    color: white;
+    margin: 13px 38px;
+    font-weight: bold;
+}
+
+.yt{
+    margin: 13px 38px;
+}
+
+iframe {
+    width: 440px;
+    height: 220px;
+}
+
+.playlist{
+    align-items: center;
+    margin: 13px 38px;
+    padding: 0 418px;
+}
+
+.playlist p{
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0 120px;
+}
+.shorts{
+    margin: 13px 38px;
+}
+
+.shorts iframe{
+    height: 440px;
+    width: 220px;
+}
+
+.reels{
+    margin: 13px 38px;
+}
+
+video{
+
+    width: 336px;
+    height: 540px;
+    border-radius: 8px;
+    padding: -9px;
+    margin: -4px 1px;
+}
+
+.work{
+    background-color: rgb(219, 189, 255);
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    left: 39%;
+    display: inline-block;
+    font-size: 30px;
+    margin: 16px 10px;
+    text-decoration: none;
+}
+
+
+.work:hover{
+    background-color: black;
+    color: white;
+    font-size: 32px;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    video{
+        width: 115px;
+        height: 300px;
+        border-radius: 8px;
+        padding: 2px;
+        margin: 0 10px;
+    }
+    
+    iframe {
+        width: 192px;
+        height: 108px;
+    }
+
+    .playlist{
+        align-items: left;
+        margin: 0px 10px;
+        padding: 2px;
+    }
+    .playlist p{
+        font-size: 15px;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+
+    .work{
+        background-color: rgb(219, 189, 255);
+        padding: 8px 9px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: #333;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        left: 30%;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 10px;
+        text-decoration: none;
+    }
+    
+    
+    .work:hover{
+        background-color: black;
+        color: white;
+        font-size: 17px;
+    }
+
+    .shorts iframe{
+        height: 192px;
+        width: 108px;
+    }
+
+}

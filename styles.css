@@ -327,8 +327,9 @@ video {
 
 .vids {
     align-items: center;
-    /* margin: 0 25px; */
-    padding: 2px;
+    margin: 7px 87px;
+    padding: 1px;
+    
     border-radius: 8px;
 }
 

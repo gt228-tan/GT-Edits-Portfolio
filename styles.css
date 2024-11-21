@@ -400,11 +400,11 @@ footer ul li a:hover {
 }
 
 .work{
-    background-color: rgb(219, 189, 255);
+    background-color: rgb(55 35 80);
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: #333;
+    color: #000;
     justify-items: center;
     align-items: center;
     position: relative;
@@ -419,7 +419,7 @@ footer ul li a:hover {
 .work:hover{
     background-color: black;
     color: white;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 

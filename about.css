@@ -14,19 +14,11 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+   
 }
 
-.flip:hover .flip-in {
-    transform: rotateY(180deg);
 
-    box-shadow: 0 0 20px rgb(213, 179, 255);
-    ;
 
-}
-
-.ff,
 .fb {
     position: absolute;
     width: 100%;
@@ -36,15 +28,16 @@
     backface-visibility: hidden;
 }
 
-.ff {
-    background-color: #bbb;
-    color: black;
+.fb img:hover{
+    width: 102%;
+    box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
 }
+
 
 .fb {
     background-color: rgb(227, 156, 255);
     color: white;
-    transform: rotateY(180deg);
+    
 }
 
 .name {
@@ -134,15 +127,12 @@
     font-weight: bold;
 }
 
-video {
 
-    width: 336px;
-    height: 540px;
-    border-radius: 8px;
-    padding: -9px;
-    margin: -8px 13px;
-}
-
+.vidtut iframe{
+    height: 440px;
+    width: 220px;
+    margin: 0 33px;
+  }
 
 
 .socials {
@@ -217,6 +207,12 @@ video {
 
     }
 
+    
+.fb img:hover{
+    width: 102%;
+    box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
+}
+
 
 
     .name {
@@ -284,14 +280,9 @@ video {
         font-size: 12px;
     }
 
-    video {
-
-        width: 115px;
-        height: 300px;
-        border-radius: 8px;
-        padding: 2px;
-        margin: 0 10px;
-
+    .vidtut iframe{
+        height: 192px;
+        width: 108px;
     }
     .socials img {
         position: relative;

@@ -408,9 +408,9 @@ footer ul li a:hover {
     justify-items: center;
     align-items: center;
     position: relative;
-    left: 39%;
+    left: 5%;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     margin: 16px 10px;
     text-decoration: none;
 }

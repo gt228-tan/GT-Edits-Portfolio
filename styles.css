@@ -19,6 +19,13 @@ body {
     top: 0;
 }
 
+
+.footer-third img{
+    width:25px;
+    height: 25px;
+    padding-left: 2px;
+}
+
 nav {
     
     display: flex;

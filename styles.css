@@ -58,8 +58,8 @@ a {
     font-size: 1.5rem;
 }
 
-.nm:hover {
-    color: rgb(213, 179, 255);
+.nm {
+    color: rgb(243, 234, 255);
 
 }
 
@@ -92,26 +92,6 @@ nav ul li a:hover {
 
 }
 
-.rev img{
-    width: 20%;
-    left: 50%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 8px;
-    margin: 15px 26px;
-    transition: transform 0.3s ease;
-    object-fit: cover;
-
-}
-
-
-
-
-.sm{
-    margin: 35px 50px;
-}
-
 .cp {
     background-color: rgb(255, 255, 255);
     padding: 8px 12px;
@@ -126,18 +106,43 @@ nav ul li a:hover {
 
 .first {
     display: flex;
-    justify-content: space-around;
+    
     margin: 25px 0;
 }
 
+.title{
+    
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+}
 
 .leftsec {
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 30px 20px;
 
+.know{
+    margin: 81px 194px;
+}
 
 }
+
+.rightsec {
+    align-items: right;
+    margin: 1px 66px;
+}
+
+.rightsec img{
+    border: 0.3px solid rgb(253, 191, 255);
+    border-radius: 10px;
+}
+
+
+
+
 
 a.but ,a.but1{
     text-decoration: none;
@@ -178,10 +183,7 @@ a.but1:hover{
 
 
 
-#element {
-    color: rgb(213, 179, 255);
-    ;
-}
+
 
 hr {
     border: 0;
@@ -225,6 +227,30 @@ hr {
 
 
 }
+
+.rev img{
+    width: 20%;
+    left: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin: 15px 26px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+
+}
+
+
+
+
+.sm{
+    margin: 30px 50px;
+    position: relative;
+    left: 45%;
+}
+
+
 
 .Third {
 

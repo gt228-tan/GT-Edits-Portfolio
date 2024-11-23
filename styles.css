@@ -92,6 +92,26 @@ nav ul li a:hover {
 
 }
 
+.rev img{
+    width: 20%;
+    left: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin: 15px 26px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+
+}
+
+
+
+
+.sm{
+    margin: 35px 50px;
+}
+
 .cp {
     background-color: rgb(255, 255, 255);
     padding: 8px 12px;

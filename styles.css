@@ -125,7 +125,7 @@ nav ul li a:hover {
     margin: 30px 20px;
 
 .know{
-    margin: 81px 194px;
+    margin: 68px -12px;
 }
 
 }
@@ -464,7 +464,7 @@ footer ul li a:hover {
     left: 5%;
     display: inline-block;
     font-size: 20px;
-    margin: 16px 10px;
+    margin: 17px -27px;
     text-decoration: none;
 }
 
@@ -472,7 +472,7 @@ footer ul li a:hover {
 .work:hover{
     background-color: black;
     color: white;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 
 
@@ -583,7 +583,7 @@ footer ul li a:hover {
 
 
     a.but:hover {
-        font-size: 12px;
+        font-size: 11px;
         background-color: rgb(115, 0, 255);
         color: rgb(255, 255, 255);
         ;

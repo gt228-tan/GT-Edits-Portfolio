@@ -26,6 +26,17 @@ body {
     padding-left: 2px;
 }
 
+
+.footer ul li{
+    margin: 10px 0;
+
+}
+.reshort iframe{
+    height: 440px;
+    width: 220px;
+    margin: 0 33px;
+}
+
 nav {
     
     display: flex;

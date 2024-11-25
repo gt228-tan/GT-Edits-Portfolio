@@ -1,0 +1,21 @@
+.revs img{
+   
+        width: 16%;
+        position: relative;
+        left: 2%;
+        border-width: 0px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 14px;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        padding: 19px;
+}
+
+p{
+    font-size: 30px;
+    color: white;
+    margin: 5px 0;
+    font-weight: bold;
+    margin: 27px 42px;
+}

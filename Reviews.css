@@ -17,5 +17,18 @@ p{
     color: white;
     margin: 5px 0;
     font-weight: bold;
-    margin: 27px 42px;
+    margin: 12px 43px;
+}
+
+
+
+p a{
+    color: rgb(177, 171, 255);
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+p a:hover{
+    color: rgb(238, 0, 255);
 }

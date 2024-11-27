@@ -135,8 +135,73 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin: 30px 20px;
 
-.know{
+.know {
     margin: 68px -12px;
+
+}
+
+
+
+.download-box {
+    display: inline-block;
+    padding: 12px 121px;
+    margin-left: 9px;
+    background-color: rgb(37 0 83);
+    /* Black background */
+    color: #7300ff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.download-box:hover {
+    background-color: rgb(255, 255, 255);
+    color: #7300ff;
+}
+
+.work {
+    background-color: rgb(55 35 80);
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    left: -1%;
+    display: inline-block;
+    font-size: 20px;
+    margin: 16px 10px;
+    text-decoration: none;
+}
+
+.work:hover {
+    background-color: black;
+    color: white;
+
+}
+
+
+
+
+a.but {
+    text-decoration: none;
+    background-color: rgb(55 35 80);
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+a.but:hover {
+    background-color: black;
+    color: white;
 }
 
 }

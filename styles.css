@@ -50,10 +50,11 @@ a {
 }
 
 
-.left {
-    font-size: 1.3rem;
-    font-weight: bold;
+.left img {
+    width: 90px;
+    height: 50px;
 }
+
 
 .left a {
     text-decoration: none;
@@ -69,14 +70,7 @@ a {
 
 }
 
-.gt {
-    color: white;
-}
 
-.gt:hover {
-    color: rgb(213, 179, 255);
-    ;
-}
 
 nav ul {
     display: flex;
@@ -145,7 +139,7 @@ nav ul li a:hover {
     margin-left: 9px;
     background-color: rgb(37 0 83);
     /* Black background */
-    color: #ffffff;
+    color: #7300ff;
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
@@ -159,12 +153,11 @@ nav ul li a:hover {
 }
 
 .work {
-    background-color:  rgb(0 0 0);
-
+    background-color: rgb(0, 0, 0);
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: #fff;
+    color: #ffffff;
     justify-items: center;
     align-items: center;
     position: relative;
@@ -186,12 +179,11 @@ nav ul li a:hover {
 
 a.but {
     text-decoration: none;
-    background-color:  rgb(0 0 0);
-
+    background-color: rgb(0, 0, 0);
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: #fff;
+    color: #ffffff;
 
     display: inline-block;
     font-size: 20px;
@@ -212,13 +204,6 @@ a.but:hover {
     border: 0.3px solid rgb(253, 191, 255);
     border-radius: 10px;
 }
-
-
-
-
-
-
-
 
 .leftsec a {
     color: rgb(237, 222, 255);
@@ -303,7 +288,6 @@ hr {
 
 .Third {
 
-    background-color: rgba(109, 72, 143, 0.186);
     padding: 0;
     font-weight: bold;
     font-size: 30px;
@@ -325,7 +309,6 @@ hr {
     margin: 20px 5px;
     width: 35%;
 
-
 }
 
 .showtb img {
@@ -334,7 +317,8 @@ hr {
 }
 
 .showtb img:hover {
-    width: 102%;
+    box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
+
 
 }
 
@@ -357,29 +341,12 @@ hr {
 }
 
 .posters img:hover {
-    width: 44%;
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     ;
 
 }
 
-.Third a.gfx {
-    background-color: rgb(115 0 255);
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 645px;
 
-}
-
-.Third a.gfx:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(115, 0, 255);
-    font-size: 21px;
-}
 
 .smp {
     margin: 20px 5px;
@@ -393,7 +360,6 @@ hr {
 }
 
 .smp img:hover {
-    width: 20%;
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     ;
 }
@@ -418,13 +384,6 @@ hr {
     margin: 0px 0px;
 }
 
-video {
-    width: 340px;
-    height: 640px;
-    border-radius: 20px;
-    padding: 5px;
-    margin: -1px -2px;
-}
 
 
 .vids {
@@ -442,23 +401,7 @@ iframe {
     height: 330px;
 }
 
-.Fourth a.videos {
-    background-color: rgb(115 0 255);
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 645px;
 
-}
-
-.Fourth a.videos:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(115, 0, 255);
-    font-size: 21px;
-}
 
 
 footer {
@@ -494,7 +437,7 @@ footer {
 .reshort iframe {
     height: 440px;
     width: 220px;
-    margin: 0 33px;
+    margin: 0 20px;
 }
 
 .footer a {
@@ -518,7 +461,8 @@ footer ul li a:hover {
 
 
 
-/* @media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
+
     * {
         margin: 0;
         padding: 0;
@@ -526,9 +470,18 @@ footer ul li a:hover {
     }
 
     body {
-        background-color: #000000;
-        background-image: url();
+        background-color: black;
         color: white;
+        background-image: url('GT_BG.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
     }
 
     nav {
@@ -536,24 +489,21 @@ footer ul li a:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 80px;
+        height: 100px;
         background-color: rgb(30, 18, 45);
 
     }
 
     a {
         color: rgb(237, 222, 255);
-        ;
-
-        font-size: 12px;
+        font-size: 10px;
     }
-    
- 
 
-    .left {
-        font-size: 12px;
-        font-weight: bold;
+    .left img {
+        width: 80px;
+        height: 40px;
     }
+
 
     .left a {
         text-decoration: none;
@@ -561,22 +511,16 @@ footer ul li a:hover {
 
     .left a:hover {
         color: white;
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    .nm:hover {
-        color: rgb(213, 179, 255);
+    .nm {
+        color: rgb(243, 234, 255);
 
     }
 
-    .gt {
-        color: white;
-    }
 
-    .gt:hover {
-        color: rgb(213, 179, 255);
-        ;
-    }
+
 
     nav ul {
         display: flex;
@@ -585,12 +529,13 @@ footer ul li a:hover {
 
     nav ul li {
         list-style: none;
-        margin: 0 10px;
+        margin: 0 5px;
 
     }
 
     nav ul li a {
         text-decoration: none;
+        font-size: 12px;
 
     }
 
@@ -599,451 +544,266 @@ footer ul li a:hover {
 
     }
 
+
     .cp {
         background-color: rgb(255, 255, 255);
-        padding: 8px 12px;
+        padding: 2px 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
         color: #333;
 
         display: inline-block;
-        font-size: 10px;
-        margin: -6px -6px;
+        font-size: 12px;
+        margin: -3px -3px;
     }
 
-    a.but ,a.but1 {
-        background-color: rgb(37, 28, 48);
+    .first {
+        display: grid;
+
+        margin: 5px 0;
+    }
+
+    .rightsec {
+        align-items: right;
+
+        margin: 1px 20px;
+    }
+
+    .rightsec img {
+        width: 200px;
+        height: 200px;
+        border: 0.3px solid rgb(253, 191, 255);
+        border-radius: 10px;
+    }
+
+    .leftsec {
+
+        font-size: 15px;
+        margin: 2px 20px;
+    }
+
+    .know {
+        margin: 20px -12px;
+
+    }
+
+    a.but {
+        text-decoration: none;
+        background-color: rgb(0, 0, 0);
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: #fff;
+
+        display: inline-block;
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    a.but:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .work {
+        background-color: rgb(0, 0, 0);
         padding: 8px 12px;
         border: 1px solid #ccc;
         border-radius: 4px;
         color: #ffffff;
-
-        display: inline-block;
-        font-size: 10px;
-        margin: 0 10px;
-    }
-
-
-    a.but:hover {
-        font-size: 12px;
-        background-color: rgb(115, 0, 255);
-        color: rgb(255, 255, 255);
-        ;
-    }
-
-    a.but1:hover {
-        font-size: 12px;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        ;
-    }
-
-    .work{
-        background-color: rgb(219, 189, 255);
-        padding: 8px 9px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        color: #333;
         justify-items: center;
         align-items: center;
         position: relative;
-        left: 30%;
+        left: -1%;
         display: inline-block;
         font-size: 15px;
-        margin: 1px 10px;
+        margin: 16px -2px;
         text-decoration: none;
     }
-    
-    
-    .work:hover{
+
+    .work:hover {
         background-color: black;
         color: white;
-        font-size: 17px;
+
     }
 
-    hr {
-        border: 0;
-        margin: 30px 30px;
-        background: rgb(149, 128, 174);
-        height: 2px;
+    .download-box {
+        display: inline-block;
+        padding: 10px 70px;
+        margin-left: 9px;
+        background-color: rgb(37 0 83);
+        /* Black background */
+        color: #7300ff;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    .download-box:hover {
+        background-color: rgb(255, 255, 255);
+        color: #7300ff;
+    }
+
+    .Second {
+
+        padding: 0;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(213, 179, 255);
+        margin: 3px 20px;
+
+
     }
 
     .image-grid {
         margin: 20px 5px;
-        width: 95%;
+        width: 120%;
 
 
     }
 
     .image-grid img {
 
-        width: 30%;
-        border-width: 0.9px;
+        width: 20%;
+        border-width: 1px;
         border-style: solid;
         border-color: white;
         border-radius: 8px;
     }
 
-    .image-grid img:hover {
-        width: 31%;
-        box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
-        ;
+
+    .rev img {
+        width: 45%;
+        left: 50%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 8px;
+        margin: 15px 2px;
+        
+        object-fit: cover;
+
     }
 
+    .sm {
+        margin: 30px 50px;
+        position: relative;
+        left: 25%;
+    }
     .Third {
+        
 
-        background-color: rgba(109, 72, 143, 0.186);
+        
         padding: 0;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         color: rgb(213, 179, 255);
-        margin: 35px 50px;
-
+        margin: 2px 20px;
+    
     }
-
-
     .graphics {
         display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-        padding: 5px;
-
-    }
-
-    .Third p {
-        font-size: 11px;
-        color: white;
-        margin: 5px 0;
+        
+    
     }
 
     .showtb {
-        margin: 10px 5px;
-        width: 35%;
-
-
+        margin: 20px 5px;
+        width: 45%;
+    
+    }
+    .Third p {
+        font-size: 15px;
+        color: white;
+        margin: 5px 0;
     }
 
     .showtb img {
-        width: 120%;
+        width: 270%;
         border-radius: 8px;
-        padding: 2px;
     }
-
-    .showtb img:hover {
-        width: 122%;
-        box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
-
-    }
-
     .posters {
-        margin: 10px 17px;
+        margin-top: 450px;
+        position: relative;
+        left: -45%;
         width: 65%;
     }
-
     .posters img {
-        width: 45.4%;
+        width: 170%;
         border-radius: 8px;
-        padding: 3px;
-
+        padding: 5px;
     }
-
-    .posters img:hover {
-        width: 46;
-        box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
-        ;
-
-    }
-
     .smp {
-        margin: 20px 5px;
+        margin-top: 50px;
         width: 100%;
+        position: relative;
+        bottom: 120%;
+        left: 6%;
     }
 
     .smp img {
-        width: 27%;
+        width: 70%;
         padding: 2px;
         border-radius: 8px;
     }
+    
+    .Fourth {
 
-    .smp img:hover {
-        width: 27.2%;
-        box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
-        ;
-    }
-
-    .Third a.gfx {
-        background-color: rgb(115 0 255);
-        padding: 8px 9px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        color: #ffffff;
-        display: inline-block;
-        font-size: 15px;
-        margin: 20px 12px;
-
-    }
-
-    .Third a.gfx:hover {
-        background-color: rgb(255, 255, 255);
-        color: rgb(115, 0, 255);
-        font-size: 17px;
-    }
-
-    .reshort {
-        padding: 20;
-    }
-
-    video {
-        width: 115px;
-        height: 300px;
-        border-radius: 8px;
-        padding: 2px;
-        margin: 0 1px;
-
-    }
-
-    iframe {
-        width: 192px;
-        height: 108px;
-    }
-
-    .Fourth a.videos {
-        background-color: rgb(115 0 255);
-        padding: 8px 9px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        color: #ffffff;
-        display: inline-block;
-        font-size: 15px;
-        margin: 20px 12px;
-
-    }
-
-    .Fourth a.videos:hover {
-        background-color: rgb(255, 255, 255);
-        color: rgb(115, 0, 255);
-        font-size: 17px;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 14px;
-        color: #ffffff;
-
-        padding: 25px 0;
-
-    }
-
-  
-}
-
-
-#preloader{
-    background: rgb(30, 18, 45) url('imgs/GT.gif') no-repeat center center; 
-    background-size: 25%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-} */
-
-
-
-@media only screen and (max-width: 768px) {
-    * {
-        margin: 0;
         padding: 0;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-        background-color: #000000;
-        color: white;
-    }
-
-    nav {
-        flex-direction: column;
-        /* Stack the nav items vertically */
-        align-items: flex-start;
-        /* Align items to the start */
-        padding: 10px;
-        /* Add some padding */
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul li {
-        list-style: none;
-        margin: 0 10px;
-
-    }
-
-    .leftsec {
-
-        font-size: 10px;
-        margin: 0px 20px;
-
-        .know {
-            margin: 81px 194px;
-        }
-
-    }
-
-    .rightsec {
-        align-items: right;
-        margin: 1px 66px;
-    }
-
-    a {
-        font-size: 12px;
-    }
-
-    .left {
-        font-size: 12px;
         font-weight: bold;
+        font-size: 20px;
+        color: rgb(213, 179, 255);
+        margin: 35px 50px;
     }
 
-    .left a:hover {
-        font-size: 12px;
-    }
-
-    .cp {
-        font-size: 10px;
-    }
-
-    a.but,
-    a.but1 {
-        font-size: 10px;
-    }
-
-    a.but:hover,
-    a.but1:hover {
-        font-size: 12px;
-    }
-
-    .work {
+    .Fourth p {
         font-size: 15px;
-        margin: 5px 0;
-        /* Space out the work buttons */
-        width: 90%;
-        /* Full width */
-        text-align: center;
-        /* Center the text */
-    }
-
-    hr {
-        margin: 20px 10px;
-        /* Adjust margins for smaller screens */
-    }
-
-    .image-grid img {
-        width: 45%;
-        /* More images visible on smaller screens */
-    }
-
-    .Third p {
-        font-size: 11px;
-    }
-
-    .showtb img {
-        width: 100%;
-        /* Make images full width */
-    }
-
-    .posters img {
-        width: 100%;
-        /* Make poster images full width */
-    }
-
-    .smp img {
-        width: 45%;
-        /* Adjust image size */
-    }
-
-    /* Responsive styles for the specified classes */
-    .sm {
-        margin: 20px 5px;
-        /* Space around .sm */
-        width: 90%;
-        /* Full width */
-        text-align: center;
-        /* Center the text */
-    }
-
-    .rev img {
-        width: 100%;
-        /* Make review images full width */
-        margin: 10px 0;
-        /* Space around images */
-        border-radius: 8px;
-        /* Maintain border radius */
-        object-fit: cover;
-        /* Maintain aspect ratio */
-    }
-
-    .know {
-        margin: 20px 5px;
-        /* Space around .know */
-        font-size: 16px;
-        /* Adjust font size */
-        text-align: center;
-        /* Center the text */
-    }
-
-    .rightsec {
-        margin: 10px 0;
-        /* Space around right section */
-        text-align: center;
-        /* Center the content */
-    }
-
-    .rightsec img {
-        width: 100%;
-        /* Make right section images full width */
-        border-radius: 8px;
-        /* Maintain border radius */
-        object-fit: cover;
-        /* Maintain aspect ratio */
-    }
-
-    video {
-        width: 100%;
-        /* Make video full width */
-        height: auto;
-        /* Maintain aspect ratio */
-    }
-
-    iframe {
-        width: 100%;
-        /* Make iframe full width */
-        height: auto;
-        /* Maintain aspect ratio */
-    }
-
-    .footer {
-        flex-direction: column;
-        /* Stack footer items vertically */
-        align-items: center;
-        /* Center footer items */
-        font-size: 14px;
-        /* Adjust font size */
-    }
-
-    .footer ul {
-        padding: 0;
-        /* Remove padding */
-    }
-
-    .footer a {
-        font-size: 12px;
-        /* Adjust link size */
-    }
-
-    .footer a:hover {
         color: white;
+        margin: 5px 0;
     }
+
+    .reshort iframe {
+        height: 220px;
+        width: 110px;
+        margin: 0 5px;
+    }
+    .reshort {
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    iframe {
+        width: 203px;
+        height: 165px;
+    }
+    .vids {
+        align-items: center;
+        margin: 7px 10px;
+        padding: 1px;
+    
+        border-radius: 8px;
+    }
+    .footer{
+        padding: 12px 0;
+    }
+
+    .footer-second{
+        position: relative;
+        top: 10%;
+    
+        margin-top: -12px;
+        
+    }
+    .footer-third img {
+        width: 15px;
+        height: 15px;
+        padding-left: 2px;
+    }
+    
+    .footer-first{
+        font-size: 15px;
+        margin-top: 2px;
+    }
+
 }

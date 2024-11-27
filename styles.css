@@ -145,7 +145,7 @@ nav ul li a:hover {
     margin-left: 9px;
     background-color: rgb(37 0 83);
     /* Black background */
-    color: #7300ff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
@@ -159,7 +159,7 @@ nav ul li a:hover {
 }
 
 .work {
-    background-color: rgb(55 35 80);
+    background-color:  rgb(255 255 255);
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -185,7 +185,7 @@ nav ul li a:hover {
 
 a.but {
     text-decoration: none;
-    background-color: rgb(55 35 80);
+    background-color:  rgb(255 255 255);
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;

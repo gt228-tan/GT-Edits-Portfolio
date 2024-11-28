@@ -32,3 +32,36 @@ p a{
 p a:hover{
     color: rgb(238, 0, 255);
 }
+
+
+@media only screen and (max-width:768px) {
+    p{
+        font-size: 25px;
+        color: white;
+        margin: 5px 0;
+        font-weight: bold;
+        margin: 12px 43px;
+    }
+
+    p a{
+        color: rgb(177, 171, 255);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: normal;
+    }
+
+    .revs img{
+   
+        width: 40%;
+        position: relative;
+        left: 8%;
+        border-width: 0px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 14px;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        padding: 6px;
+}
+
+}

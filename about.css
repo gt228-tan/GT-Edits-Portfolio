@@ -14,31 +14,25 @@
     width: 100%;
     height: 100%;
     text-align: center;
-   
+
 }
 
 
 
 .fb {
-    position: absolute;
+
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
+
 }
 
-.fb img:hover{
+.fb img:hover {
     width: 102%;
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
 }
 
 
-.fb {
-    background-color: rgb(227, 156, 255);
-    color: white;
-    
-}
+
 
 .name {
     font-size: 80px;
@@ -128,11 +122,11 @@
 }
 
 
-.vidtut iframe{
+.vidtut iframe {
     height: 440px;
     width: 220px;
     margin: 0 33px;
-  }
+}
 
 
 .socials {
@@ -189,114 +183,161 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-
-    .flip{
-        padding: 1%;
-    }
-
-
-    .flip-in {
-
-       
-        left: 0%;
-        
-        position: absolute;
-        width: 50%;
-        height: 50%;
-
-    }
-
-    
-.fb img:hover{
-    width: 102%;
-    box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
+.socials img#gh:hover {
+    background-color: #000;
+    border-radius: 20px;
 }
 
 
 
+@media only screen and (max-width:768px) {
+
+    .flip {
+        background-color: transparent;
+
+        width: 50px;
+        height: 50px;
+        display: grid;
+
+        padding: 5px 0;
+        margin-left: 15px;
+        perspective: 1000px;
+    }
+
+    .fb img {
+        width: 200px;
+        height: 200px;
+        margin-left: 15px;
+    }
+
     .name {
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         font-weight: bold;
         position: absolute;
-        right: 300px;
-        bottom: 100px;
-    }
-
-
-    img {
-        width: 100%;
-        height: 100%;
+        left: 15px;
+        top: 250px;
     }
 
     .name p {
-        font-size: 10px;
-        font-weight: normal;
-        text-align: center;
-        padding: 0px;
-    }
-
-    .name p:hover {
-        color: rgb(213, 179, 255);
-        ;
         font-size: 20px;
         font-weight: normal;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #secg {
+        position: relative;
+        right: 300px;
+        font-size: 18px;
+    }
+
+
+
+    .row {
+        margin: 37px -5px;
+
+    }
+
+    .r {
+        position: relative;
+        margin: 0 90px;
+        margin-top: 360px;
     }
 
     .column {
         float: left;
-        width: 20%;
-        padding: 0 7px;
+        width: 30%;
+        height: 20%;
+        padding: 0 20px;
+        margin-bottom: 6px;
+        margin-left: 15px;
     }
 
-    .row {
-        margin: 0 -2px;
+    .card p {
+        font-size: 12px;
+    }
+
+    .card h3 {
+        font-size: 15px;
     }
 
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 2px;
+        padding: 6px;
         text-align: center;
 
         color: white;
         border-color: rgb(217, 183, 255);
         ;
-        border-width: 1px;
+        border-width: 2px;
         border-style: solid;
-        border-radius: 4px;
+        border-radius: 8px;
     }
 
-    .card:hover {
-        background-color: rgb(255, 255, 255);
-        color: rgb(38, 18, 60);
+
+    .vidtut iframe {
+        height: 220px;
+        width: 110px;
+        margin: 0 5px;
+        
     }
 
-    .card p {
-        font-size: 10px;
+    .vidtut{
+        margin-left: 25px;
     }
 
-    .card h3 {
-        font-size: 12px;
+    .socials {
+        width: 70%;
     }
-
-    .vidtut iframe{
-        height: 192px;
-        width: 108px;
-    }
+    
     .socials img {
         position: relative;
         align-items: center;
-        top: -23px;
-        left: 40px;
+        bottom: 30px;
+        left: 60px;
     
-        width: 50px;
-        height: 50px;
-        padding: 12px;
+        width: 25px;
+        height: 25px;
+        padding: 2px;
     }
-    
     .socials img#yt {
-        width: 75px;
-        height: 50px;
+        width: 40px;
+        height: 25px;
     }
+    .socials img#yt:hover {
+        background-color: red;
+        border-radius: 10px;
+    }
+    
+    .socials img#insta:hover {
+        
+        border-radius: 10px;
+    }
+    
+    .socials img#x:hover {
+        
+        border-radius: 10px;
+    }
+    
+    .socials img#dc:hover {
+        
+        border-radius: 10px;
+    }
+    
+    .socials img#lin:hover {
+      
+        border-radius: 10px;
+    }
+    
+    .socials img#be:hover {
+        
+        border-radius: 10px;
+    }
+    
+    .socials img#gh:hover {
+     
+        border-radius: 10px;
+    }
+
 }

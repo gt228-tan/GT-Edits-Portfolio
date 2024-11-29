@@ -16,7 +16,7 @@ p{
 }
 
 .tbs img:hover{
-    width: 25%;
+  
     
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     
@@ -41,7 +41,7 @@ p{
 }
 
 .bhs img:hover{
-    width: 33%;
+   
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
 }
 .smp {
@@ -62,7 +62,7 @@ p{
 }
 
 .smp img:hover {
-    width: 19%;
+  
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     ;
 }
@@ -80,7 +80,7 @@ p{
 }
 
 .pst img:hover {
-    width: 19%;
+  
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     ;
 }
@@ -97,7 +97,7 @@ p{
 }
 
 .st img:hover {
-    width: 19%;
+   
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     ;
 }
@@ -133,7 +133,7 @@ p{
     }
     
     .tbs img:hover{
-        width: 46%;
+       
         box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     }
     .bhs{
@@ -150,7 +150,7 @@ p{
     }
     
     .bhs img:hover{
-        width: 61%;
+        
         box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
     }
     .smp img {
@@ -160,7 +160,7 @@ p{
     }
     
     .smp img:hover {
-        width: 40.5%;
+        
         box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
         ;
     }
@@ -178,7 +178,7 @@ p{
 
     
     .st img:hover {
-        width: 40.5%;
+    
         box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
         ;
     }
@@ -190,7 +190,7 @@ p{
     }
     
     .pst img:hover {
-        width: 40.5%;
+       
         box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
         ;
     }

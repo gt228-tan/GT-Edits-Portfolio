@@ -137,7 +137,7 @@ nav ul li a:hover {
     display: inline-block;
     padding: 12px 121px;
     margin-left: 9px;
-    background-color: rgb(114 0 255)
+    background-color: rgb(114 0 255);
     /* Black background */
     color: #7300ff;
     text-decoration: none;
@@ -631,7 +631,7 @@ footer ul li a:hover {
         display: inline-block;
         padding: 10px 70px;
         margin-left: 9px;
-        background-color: rgb(37 0 83);
+        background-color: rgb(114 0 255);
         /* Black background */
         color: #7300ff;
         text-decoration: none;

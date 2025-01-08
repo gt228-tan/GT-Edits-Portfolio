@@ -1,15 +1,15 @@
-p{
+p {
     font-size: 25px;
     color: white;
     margin: 13px 38px;
     font-weight: bold;
 }
 
-.yt{
+.yt {
     margin: 13px 38px;
 }
 
-.vlogs{
+.vlogs {
     margin: 13px 38px;
 }
 
@@ -19,20 +19,20 @@ iframe {
 }
 
 
-.ytshorts{
+.ytshorts {
     margin: 13px 38px;
 }
 
-.ytshorts iframe{
+.ytshorts iframe {
     height: 320px;
     width: 180px;
 }
 
-.reels{
+.reels {
     margin: 13px 38px;
 }
 
-video{
+video {
 
     width: 336px;
     height: 540px;
@@ -41,7 +41,7 @@ video{
     margin: -4px 1px;
 }
 
-.work{
+.work {
     background-color: rgb(219, 189, 255);
     padding: 8px 12px;
     border: 1px solid #ccc;
@@ -57,11 +57,11 @@ video{
     text-decoration: none;
 }
 
-.more{
-    left:900px
+.more {
+    left: 900px
 }
 
-.work:hover{
+.work:hover {
     background-color: black;
     color: white;
     font-size: 32px;
@@ -70,31 +70,28 @@ video{
 
 @media only screen and (max-width:768px) {
 
-    video{
+    video {
         width: 115px;
         height: 300px;
         border-radius: 8px;
         padding: 2px;
         margin: 0 10px;
     }
-    
+
     iframe {
         width: 192px;
         height: 108px;
     }
 
-    .playlist{
-        align-items: left;
-        margin: 0px 10px;
-        padding: 2px;
+    .more{
+        font-size: 12px;
+    color: #e8fa02;
+    position: relative;
+    left: -200px;
+    top:25px;
     }
-    .playlist p{
-        font-size: 15px;
-        font-weight: normal;
-        padding: 0 10px;
-    }
-
-    .work{
+    
+    .work {
         background-color: rgb(219, 189, 255);
         padding: 8px 9px;
         border: 1px solid #ccc;
@@ -109,17 +106,17 @@ video{
         margin: 1px 10px;
         text-decoration: none;
     }
-    
-    
-    .work:hover{
+
+
+    .work:hover {
         background-color: black;
         color: white;
         font-size: 17px;
     }
 
-    .ytshorts iframe{
-        height: 192px;
-        width: 108px;
+    .ytshorts iframe {
+        height: 240px;
+        width: 135px;
     }
 
 }

@@ -1,7 +1,14 @@
+.cts{
+    margin:10px;
+}
+    
+
+
 .cts p{
     color: #000000;
     font-weight: bold;
     font-size: 30px;
+    
 }
 
 
@@ -13,6 +20,7 @@
     border-style: solid;
     border-color: white;
     border-radius: 8px;
+   
 }
 
 .image-grid img:hover {
@@ -21,4 +29,12 @@
     ;
 
 
+}
+
+@media only screen and (max-width:768px) {
+
+
+.image-grid img{
+    width:20%;
+}
 }

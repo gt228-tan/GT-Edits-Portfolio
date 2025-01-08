@@ -136,6 +136,7 @@ p a:hover{
         position: relative;
         left: 0%;
         margin-top: 2px;
+        
     
     }
     #dt1{
@@ -153,8 +154,8 @@ p a:hover{
         display: inline-block;
         padding: 8px 35px;
         margin-left: 9px;
-        background-color: rgb(117 7 255);
-        color: #ffffff;
+        background-color: rgb(10, 8, 13);
+        color: #e8fa02;
         text-decoration: none;
         border-radius: 7px;
         text-align: center;
@@ -194,8 +195,8 @@ p a:hover{
         display: inline-block;
         padding: 8px 35px;
         margin-left: 9px;
-        background-color: rgb(117 7 255);
-        color: #ffffff;
+        background-color: rgb(10, 8, 13);
+    color: #e8fa02;
         text-decoration: none;
         border-radius: 7px;
         text-align: center;

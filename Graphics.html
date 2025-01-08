@@ -16,18 +16,14 @@
 <body>
     <div id="preloader"></div>
     <header>
-        <nav>
-            <div class="left"><a href="index.html"><img src="GT_LOGO.png" alt=""></a></div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Graphics.html"><span class="cp">Graphics</span> </a></li>
-                    <li><a href="Vid.html">Video Editing</a></li>
-                   <li><a href="Reviews.html">Reviews</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar">
+        <a href="#" class="logo"><img src="GT_LOGO.png" alt="GT Logo"> 
+            <a href="index.html"class="page" >Home</a>
+            <a href="About.html"class="page">About</a>
+
+        <a href="Graphics.html"class="page"><span class="cp">Graphics</span></a>
+        <a href="Vid.html"class="page">Video Editing</a>
+      </div>
     </header>
     <main>
         <p>Thumbnails</p>
@@ -103,7 +99,7 @@
                     <li><a href="About.html">About</a></li>
                     <li><a href="Graphics.html">Graphics</a></li>
                     <li><a href="Vid.html">Video Editing</a></li>
-                                        <li><a href="Reviews.html">Reviews</a></li>
+                                       
 
                 </ul>
             </div>
@@ -123,15 +119,6 @@
         </div>
     </footer>
 
-    <script>
-        var loader = document.getElementById("preloader");
-    
-        window.addEventListener("load", function() {
-            setTimeout(function() {
-                loader.style.display = "none";
-            }, 1000); 
-        });
-    </script>
     
 </body>
 </html>

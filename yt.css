@@ -18,24 +18,14 @@ iframe {
     height: 220px;
 }
 
-.playlist{
-    align-items: center;
-    margin: 13px 38px;
-    padding: 0 418px;
-}
 
-.playlist p{
-    font-size: 15px;
-    font-weight: normal;
-    padding: 0 120px;
-}
-.shorts{
+.ytshorts{
     margin: 13px 38px;
 }
 
-.shorts iframe{
-    height: 440px;
-    width: 220px;
+.ytshorts iframe{
+    height: 320px;
+    width: 180px;
 }
 
 .reels{
@@ -67,6 +57,9 @@ video{
     text-decoration: none;
 }
 
+.more{
+    left:900px
+}
 
 .work:hover{
     background-color: black;
@@ -124,7 +117,7 @@ video{
         font-size: 17px;
     }
 
-    .shorts iframe{
+    .ytshorts iframe{
         height: 192px;
         width: 108px;
     }

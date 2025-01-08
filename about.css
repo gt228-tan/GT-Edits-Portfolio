@@ -31,6 +31,9 @@
     box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
 }
 
+#secg{
+    color: #e8fa02;
+}
 
 
 
@@ -64,6 +67,7 @@
     font-weight: normal;
     text-align: left;
     padding: 2px;
+    color: #e8fa02;
 }
 
 .box {

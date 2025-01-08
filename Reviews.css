@@ -1,67 +1,26 @@
-.revs img{
-   
-        width: 16%;
-        position: relative;
-        left: 2%;
-        border-width: 0px;
-        border-style: solid;
-        border-color: white;
-        border-radius: 14px;
-        transition: transform 0.3s ease;
-        object-fit: cover;
-        padding: 19px;
-}
 
-p{
-    font-size: 30px;
-    color: white;
-    margin: 5px 0;
+.revs p{
+    color: #000000;
     font-weight: bold;
-    margin: 12px 43px;
-}
+    font-size: 30px;
+  }
 
-
-
-p a{
-    color: rgb(177, 171, 255);
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: normal;
-}
-
-p a:hover{
-    color: rgb(238, 0, 255);
-}
-
-
-@media only screen and (max-width:768px) {
-    p{
-        font-size: 25px;
-        color: white;
-        margin: 5px 0;
-        font-weight: bold;
-        margin: 12px 43px;
-    }
-
-    p a{
-        color: rgb(177, 171, 255);
-        font-size: 12px;
-        text-decoration: none;
-        font-weight: normal;
-    }
-
-    .revs img{
+.rev img {
+    margin-left: 10px;
+    width: 15%;
+    left: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin: 15px 10 px;
    
-        width: 40%;
-        position: relative;
-        left: 8%;
-        border-width: 0px;
-        border-style: solid;
-        border-color: white;
-        border-radius: 14px;
-        transition: transform 0.3s ease;
-        object-fit: cover;
-        padding: 6px;
+    object-fit: cover;
 }
-
-}
+.more{
+    left: 10px;
+    font-size: 20px;
+    color: #e8fa02;
+    position: relative;
+    
+  }

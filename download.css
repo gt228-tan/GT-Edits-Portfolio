@@ -8,11 +8,19 @@ p{
 p a{
     color: rgb(177, 171, 255);
     font-size:20px;
-    text-decoration: none;
+    
     font-weight: normal;
 }
 
-
+.more{
+    left: 1020px;
+    font-size: 20px;
+    color: #e8fa02;
+    position: relative;
+}
+.more a{
+    text-decoration: solid;
+}
 p a:hover{
     color: rgb(238, 0, 255);
 }
@@ -30,6 +38,7 @@ p a:hover{
     position: relative;
     left: 20%;
     margin-top: -182px;
+    color: #e8fa02;
 
 }
 #dt1{
@@ -37,7 +46,7 @@ p a:hover{
    position: relative;
    left: 20%;
    font-weight: normal;
-   color: rgb(250, 185, 255);
+   color: rgb(255, 255, 255);
 
 }
 
@@ -48,8 +57,8 @@ p a:hover{
     display: inline-block;
     padding: 8px 70px;
     margin-left: 9px;
-    background-color: rgb(117 7 255);
-    color: #ffffff;
+    background-color: rgb(10, 8, 13);
+    color: #e8fa02;
     text-decoration: none;
     border-radius: 7px;
     text-align: center;
@@ -74,6 +83,7 @@ p a:hover{
     right: 31%;
     margin-top: -182px;
     text-align: right;
+    color: #e8fa02;
 
 }
     
@@ -83,7 +93,7 @@ p a:hover{
     position: relative;
     right: 31%;
     font-weight: normal;
-    color: rgb(250, 185, 255);
+    color: rgb(255, 255, 255);
 }
 
 .agbox{
@@ -93,8 +103,8 @@ p a:hover{
     display: inline-block;
     padding: 8px 70px;
     margin-left: 9px;
-    background-color: rgb(117 7 255);
-    color: #ffffff;
+    background-color: rgb(10, 8, 13);
+    color: #e8fa02;
     text-decoration: none;
     border-radius: 7px;
     text-align: center;

@@ -1,0 +1,24 @@
+.cts p{
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.image-grid img {
+
+    width: 13%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.image-grid img:hover {
+
+    box-shadow: 0 0 3px 1.5px rgba(183, 105, 255, 0.662);
+    ;
+
+
+}

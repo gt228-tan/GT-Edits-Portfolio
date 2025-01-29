@@ -66,6 +66,17 @@ video {
     color: white;
     font-size: 32px;
 }
+.gst{
+ 
+
+        font-size: 20px;
+        color: #e8fa02;
+        padding-right: 10px;
+        position: relative;
+        left: 800px;
+      
+      }
+
 
 
 @media only screen and (max-width:768px) {
@@ -77,7 +88,9 @@ video {
         padding: 2px;
         margin: 0 10px;
     }
-
+    .yt , .ytshorts{
+        padding-top: 12px;
+    }
     iframe {
         width: 192px;
         height: 108px;
@@ -87,8 +100,18 @@ video {
         font-size: 12px;
     color: #e8fa02;
     position: relative;
-    left: -200px;
+    left: -212px;
     top:25px;
+    }
+
+    .gst{
+
+        font-size: 12px;
+        color: #e8fa02;
+        padding-right: 5px;
+        position: relative;
+        left: -118px;
+        top:25px;
     }
     
     .work {

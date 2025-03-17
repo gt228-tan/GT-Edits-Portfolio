@@ -2,348 +2,462 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GT Edits's Clients</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="GTLogo.ico">
-    <!-- <link rel="stylesheet" href="styles.css" ;> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GT Edits's Clients</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="GTLogo.ico">
+  <!-- <link rel="stylesheet" href="styles.css" ;> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
   <header class="text-white body-font bg-black">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-        <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-            
-            <span class="ml-1 text-xl">GT Edits</span>
-        </a>
+      <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
 
-        <!-- Hamburger Menu for Mobile -->
-        <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+        <span class="ml-1 text-xl">GT Edits</span>
+      </a>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Sidebar Menu -->
+      <div id="sidebar"
+        class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
+        <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
         </button>
 
-        <!-- Sidebar Menu -->
-        <div id="sidebar" class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-            <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-
-            <nav class="flex flex-col mt-10 space-y-4">
-                <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-                <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-                <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-                <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
-            </nav>
-
-            <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-                <button class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
-                    Contact me
-                </button>
-            </a>
-        </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-            <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-            <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-            <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
+        <nav class="flex flex-col mt-10 space-y-4">
+          <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
+          <a href="About.html" class="text-white hover:text-indigo-200">About</a>
+          <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
+          <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
         </nav>
 
-        <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-            <button class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-                Contact me
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
+        <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
+          <button
+            class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
+            Contact me
+          </button>
         </a>
-    </div>
-</header>
+      </div>
 
-<!-- JavaScript for Sidebar Toggle -->
-<script>
+      <!-- Desktop Navigation -->
+      <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
+        <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
+        <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
+        <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
+        <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
+      </nav>
+
+      <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
+        <button
+          class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
+          Contact me
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </header>
+
+  <!-- JavaScript for Sidebar Toggle -->
+  <script>
     const menuBtn = document.getElementById('menuBtn');
     const sidebar = document.getElementById('sidebar');
     const closeBtn = document.getElementById('closeBtn');
 
     menuBtn.addEventListener('click', () => {
-        sidebar.classList.remove('-translate-x-full');
+      sidebar.classList.remove('-translate-x-full');
     });
 
     closeBtn.addEventListener('click', () => {
-        sidebar.classList.add('-translate-x-full');
+      sidebar.classList.add('-translate-x-full');
     });
 
     // Close sidebar when clicking outside
     window.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-            sidebar.classList.add('-translate-x-full');
-        }
+      if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        sidebar.classList.add('-translate-x-full');
+      }
     });
-</script>
-<section class="text-gray-600 body-font">
+  </script>
+  <section class="text-gray-600 body-font">
     <p class="text-4xl text-black px-5 pt-5">Clients</p>
+
+    <div class="flex flex-wrap -m-4 mt-5 ml-2 mr-2">
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Raka.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">RakaZone Gaming</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">505k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@RakaZoneGaming">YouTube Channel
+              </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Sharkshe.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Sharkshe</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">452k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@SHARKSHE">YouTube Channel </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Xyaa.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Xyaa</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">423k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@XyaaLive">YouTube Channel </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/HydraFlick.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">HydraFlick</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">336k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@HydraFlick">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Mili.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Mili Kya Mili</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">321k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@MilikyaMili">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Amisha.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Amisha Singh</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">245k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@AmishaSingh19">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+    </div>
     
-      <div class="flex flex-wrap -m-4 mt-5 ml-2 mr-2">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Raka.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">RakaZone Gaming</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">505k Subscribers</h1>
-              <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@RakaZoneGaming">YouTube Channel </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Sharkshe.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Sharkshe</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">452k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@SHARKSHE">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Xyaa.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Xyaa</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">423k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@XyaaLive">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/HydraFlick.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">HydraFlick</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">336k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@HydraFlick">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Mili.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Mili Kya Mili</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">321k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@MilikyaMili">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Kushal.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Kushal Mahajan</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">205k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@KushalMahajan">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
 
     <div class="flex flex-wrap -m-4 mt-5 ml-2 mr-2">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Spero.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">SpeRo </h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">112k Subscribers</h1>
-              <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@SpeRocasts">YouTube Channel </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Eupho.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Eupho</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">106k Subscribers</h1>
 
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@OfficialEupHo">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Jimmy.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jimmy Gaming</h2>
-                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">78k Subscribers</h1>
 
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@JimmyGaming69">YouTube Channel </a></p>            </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Kushal.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Kushal Mahajan</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">205k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@KushalMahajan">YouTube Channel
+              </a></p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Toasty.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Toaster Roaster </h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">61k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@ToastyAF">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Meow.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Meow 16K</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">61k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@Meow16k">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Eclairs.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Eclairs</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">49k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@Eclairsgaming">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        
       </div>
+
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Spero.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">SpeRo </h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">112k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@SpeRocasts">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Eupho.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Eupho</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">106k Subscribers</h1>
+
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@OfficialEupHo">YouTube Channel
+              </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Jimmy.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Jimmy Gaming</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">78k Subscribers</h1>
+
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@JimmyGaming69">YouTube Channel
+              </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Toasty.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Toaster Roaster </h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">61k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@ToastyAF">YouTube Channel </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Meow.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Meow 16K</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">61k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@Meow16k">YouTube Channel </a></p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
     </div>
     <div class="flex flex-wrap -m-4 mt-5 ml-2 mr-2">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Casper.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">CaspeR</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">41k Subscribers</h1>
-              <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@CaspeRMineK">YouTube Channel </a></p>
-            </div>
+
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Eclairs.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Eclairs</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">49k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@Eclairsgaming">YouTube Channel
+              </a></p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Bathura.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">LordBathura</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">36k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@lordbathura">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Klurge.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Klurge</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">36k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@Klurge">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/VeryPeri.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Very Peri</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">28k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@very_peri">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Chhabra Saab.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Chhabra Saab</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">24k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@chhabrasaaab">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Surve.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Surve</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">17k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@SurvEcs">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        
       </div>
+      
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Casper.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">CaspeR</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">41k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@CaspeRMineK">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Bathura.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">LordBathura</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">36k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@lordbathura">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Klurge.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Klurge</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">36k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@Klurge">YouTube Channel </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/VeryPeri.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Very Peri</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">28k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@very_peri">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Chhabra Saab.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Chhabra Saab</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">24k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@chhabrasaaab">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
     </div>
     <div class="flex flex-wrap -m-4 mt-5 ml-2 mr-2 mb-2">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/DevilDeez.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Devil Deez</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">17k Subscribers</h1>
-              <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@DevilDeez">YouTube Channel </a></p>
-            </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Surve.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Surve</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">17k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@SurvEcs">YouTube Channel </a></p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Alexaa.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Alexaa</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">11k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@notyourAlexaa">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="clients/CS/Valcon.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Valcon Gaming </h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">2.5k Subscribers</h1>
-<p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@VALCONGAMINGyt">YouTube Channel </a></p>            </div>
-          </div>
-        </div>
-        
-       
-        
-        
       </div>
+
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/DevilDeez.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Devil Deez</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">17k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@DevilDeez">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Alexaa.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Alexaa</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">11k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@notyourAlexaa">YouTube Channel
+              </a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Dorp.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Dorp Plys</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">3k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@DorpPlays">YouTube Channel </a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Valcon.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Valcon Gaming</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">2.5k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@VALCONGAMINGyt">YouTube Channel </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+            src="clients/CS/Vaka.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Vaka Plays</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">1.01k Subscribers</h1>
+            <p class="leading-relaxed text-red-500"><a href="https://www.youtube.com/@playsvaka">YouTube Channel
+              </a></p>
+          </div>
+        </div>
+      </div>
+     
+
+
+
+    </div>
     </div>
   </section>
-    
 
-    <footer class="text-gray-600 body-font">
-   
-        <div class="bg-gray-100">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 GT Edits 
-            
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
-             
-              <a href="https://x.com/GTTanishq22" class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-      </footer>
-    
-    
-    </body>
-    </html>
+
+  <footer class="text-gray-600 body-font">
+
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 GT Edits
+
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
+
+          <a href="https://x.com/GTTanishq22" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

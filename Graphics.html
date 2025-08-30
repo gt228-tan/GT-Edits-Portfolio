@@ -9,129 +9,141 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="GTLogo.ico">
+    <link rel="icon" type="image/x-icon" href="GTLogo.ico">
     <!-- <link rel="stylesheet" href="styles.css" ;> -->
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-  <header class="text-white body-font bg-black">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-        <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-            
-            <span class="ml-1 text-xl">GT Edits</span>
-        </a>
 
-        <!-- Hamburger Menu for Mobile -->
-        <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
+<body class="bg-gradient-to-r from-stone-900 via-blue-700 to-indigo-900">
+    <header class="text-white body-font bg-black">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
+            <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
 
-        <!-- Sidebar Menu -->
-        <div id="sidebar" class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-            <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                <span class="ml-1 text-xl">GT Edits</span>
+            </a>
+
+            <!-- Hamburger Menu for Mobile -->
+            <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
                 </svg>
             </button>
 
-            <nav class="flex flex-col mt-10 space-y-4">
-                <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-                <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-                <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-                <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
+            <!-- Sidebar Menu -->
+            <div id="sidebar"
+                class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
+                <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+
+                <nav class="flex flex-col mt-10 space-y-4">
+                    <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
+                    <a href="About.html" class="text-white hover:text-indigo-200">About</a>
+                    <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
+                    <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
+                </nav>
+
+                <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
+                    <button
+                        class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
+                        Contact me
+                    </button>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
+                <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
+                <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
+                <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
             </nav>
 
-            <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-                <button class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
+            <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
+                <button
+                    class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
                     Contact me
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
                 </button>
             </a>
         </div>
+    </header>
 
-        <!-- Desktop Navigation -->
-        <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-            <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-            <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-            <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
-        </nav>
+    <!-- JavaScript for Sidebar Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const closeBtn = document.getElementById('closeBtn');
 
-        <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-            <button class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-                Contact me
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </a>
-    </div>
-</header>
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.remove('-translate-x-full');
+        });
 
-<!-- JavaScript for Sidebar Toggle -->
-<script>
-    const menuBtn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('closeBtn');
-
-    menuBtn.addEventListener('click', () => {
-        sidebar.classList.remove('-translate-x-full');
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.add('-translate-x-full');
-    });
-
-    // Close sidebar when clicking outside
-    window.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeBtn.addEventListener('click', () => {
             sidebar.classList.add('-translate-x-full');
-        }
-    });
-</script>
+        });
 
-<p class="text-4xl text-gray-700 px-5 pt-5">Thumbnails</p>
-<div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
-    <img src="Tbs/Rega Road to 3M.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/Mili Guess Who 2.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/Casper New Agent copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/Skrossi Tb.jpg" alt="" class="w-[45%] sm:w-[24%]">
-</div>
-<div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
-    <img src="Tbs/Blood Bus .jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/SuperJonny Secrets.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/Sensei Valorant copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/VC DXE Zizu .jpg" alt="" class="w-[45%] sm:w-[24%]">
-</div>
-<div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
-    <img src="Tbs/Meow Noob to Pro copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/Casper 40k.png" alt="" class="w-[45%] sm:w-[24%]">
-  <img src="Tbs/Spero 1v5 copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
-    <img src="Tbs/Toasty XDefiant copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
-</div>
+        // Close sidebar when clicking outside
+        window.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+    </script>
 
-    <hr class="border-gray-700  mx-10 mt-5">
+    <p class="text-4xl text-yellow-200 px-5 pt-5">Thumbnails</p>
+    <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
+        <img src="Tbs/Rega Road to 3M.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Mili Guess Who 2.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Casper New Agent copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Skrossi Tb.jpg" alt="" class="w-[45%] sm:w-[24%]">
+    </div>
+    <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
+        <img src="Tbs/Blood Bus .jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/SuperJonny Secrets.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Sensei Valorant copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/VC DXE Zizu .jpg" alt="" class="w-[45%] sm:w-[24%]">
+    </div>
+    <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
+        <img src="Tbs/Meow Noob to Pro copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Casper 40k.png" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Spero 1v5 copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
+        <img src="Tbs/Toasty XDefiant copy.jpg" alt="" class="w-[45%] sm:w-[24%]">
+    </div>
 
-    <p class="text-4xl text-gray-700 px-5 pt-5">Twitter Headers</p>
+    <hr class="border-gray-400  mx-10 mt-5">
+
+
+    <p class="text-4xl text-yellow-200 px-5 pt-5">Twitter Headers</p>
     <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
         <img src="Tbs/THs/LightingFast X Header.jpg" alt="" class="w-[95%] sm:w-[32%]">
         <img src="Tbs/THs/Parth X.png" alt="" class="w-[95%] sm:w-[32%]">
         <img src="Tbs/THs/Valcon X.png" alt="" class="w-[95%] sm:w-[32%]">
     </div>
 
-      <hr class="border-gray-700  mx-10 mt-5">
+    <hr class="border-gray-400  mx-10 mt-5">
 
-      <p class="text-4xl text-gray-700 px-5 pt-5">Channel Arts</p>
-<div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
-    <img src="Tbs/BHs/banner3.png" alt="" class="w-[95%] sm:w-[32%]">
-    <img src="Tbs/BHs/banner1.png" alt="" class="w-[95%] sm:w-[32%]">
-    <img src="Tbs/BHs/banner2.png" alt="" class="w-[95%] sm:w-[32%]">
-</div>
 
-    <hr class="border-gray-700  mx-10 mt-5">
-    <p class="text-4xl text-gray-700 px-5 pt-5">Social Media Posts</p>
+    <p class="text-4xl text-yellow-200 px-5 pt-5">Channel Arts</p>
+    <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
+        <img src="Tbs/BHs/banner3.png" alt="" class="w-[95%] sm:w-[32%]">
+        <img src="Tbs/BHs/banner1.png" alt="" class="w-[95%] sm:w-[32%]">
+        <img src="Tbs/BHs/banner2.png" alt="" class="w-[95%] sm:w-[32%]">
+    </div>
+
+    <hr class="border-gray-400  mx-10 mt-5">
+
+    <p class="text-4xl text-yellow-200 px-5 pt-5">Social Media Posts</p>
 
     <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
         <img src="SMP/Mau bt.jpeg" alt="" class="w-[45%] sm:w-[19%]">
@@ -141,12 +153,12 @@
         <img src="SMP/550GT.jpg" alt="" class="w-[45%] sm:w-[19%]">
 
     </div>
-    
-    
 
-    <hr class="border-gray-700  mx-10 mt-5">
 
-    <p class="text-4xl text-gray-700 px-5 pt-5">Social Media Stories</p>
+    <hr class="border-gray-400  mx-10 mt-5">
+
+
+    <p class="text-4xl text-yellow-200 px-5 pt-5">Social Media Stories</p>
     <div class="flex flex-wrap justify-left gap-3 px-5 pt-2">
         <img src="SMP/Stories/Harsh Rap Out.png" alt="" class="w-[45%] sm:w-[19%]">
         <img src="SMP/Stories/RNT x Tx jersey.png" alt="" class="w-[45%] sm:w-[19%]">
@@ -154,43 +166,51 @@
         <img src="SMP/Stories/MD.jpg" alt="" class="w-[45%] sm:w-[19%]">
         <img src="SMP/Stories/Xyaa.jpg" alt="" class="w-[45%] sm:w-[19%]">
     </div>
-  
-       
-        
-        
-          
+
+
+
+
+
 
     <footer class="text-gray-600 body-font">
-   
-        <div class="bg-gray-100">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 GT Edits 
-            
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
-             
-              <a href="https://x.com/GTTanishq22" class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
-          </div>
+
+        <div>
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-white text-sm text-center sm:text-left">© 2025 GT Edits
+
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
+
+                    <a href="https://x.com/GTTanishq22" class="ml-3 text-white">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-white">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-white">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
         </div>
-      </footer>
-    
-    
-    </body>
-    </html>
+    </footer>
+
+
+</body>
+
+</html>

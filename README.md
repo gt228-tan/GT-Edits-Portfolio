@@ -1,10 +1,10 @@
 # GT Edits Portfolio 🎬✨
 
-![GT Edits Logo](GT_LOGO.png)
 
+> **GT Edits** 
 > A professional portfolio website showcasing video editing, graphic design, and creative content services.
 
-[![Live Website](https://img.shields.io/badge/Website-Live-success)](https://gt-edits-portfolio.netlify.app)
+[![Live Website](https://img.shields.io/badge/Website-Live-success)](https://gt228-tan.github.io/GT-Edits-Portfolio/)
 [![Instagram](https://img.shields.io/badge/Instagram-@gt._.edits-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/gt._.edits/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Tanishq_Mehta-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanishq-mehta-51055127b/)
 
@@ -30,7 +30,7 @@
 
 ## 🌐 Live Demo
 
-Visit the live portfolio: **[GT Edits Portfolio](https://your-domain-here.com)**
+Visit the live portfolio: **[GT Edits Portfolio](https://gt228-tan.github.io/GT-Edits-Portfolio/)**
 
 ---
 
@@ -213,50 +213,6 @@ Connect with GT Edits:
 - ✅ Favicon included
 
 
-## 🚀 Deployment
-### GitHub Pages
-
-1. Push to GitHub repository
-2. Go to **Settings** → **Pages**
-3. Select branch: `main`
-4. Click **Save**
-5. Visit: `https://your-username.github.io/GT-Edits-Portfolio/`
-
-### Netlify
-
-1. Connect GitHub repository
-2. Build settings: None (static site)
-3. Publish directory: `/`
-4. Deploy!
-
-### Vercel
-
-```bash
-npm i -g vercel
-vercel
-```
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is **open source** and available for personal and educational use.
-
-For commercial use of designs and assets, please contact GT Edits.
-
----
 
 ## 💼 Hire GT Edits
 

@@ -3,14 +3,14 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-DN6498BW3F');
-</script>
+    gtag('config', 'G-DN6498BW3F');
+  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,129 +27,135 @@
 <body class="bg-black flex flex-col min-h-screen">
 
   <!-- HEADER -->
- <header class="text-white body-font bg-black">
+  <header class="text-white body-font bg-black">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-        <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-            
-            <span class="ml-1 text-xl">GT Edits</span>
-        </a>
+      <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
 
-        <!-- Hamburger Menu for Mobile -->
-        <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+        <span class="ml-1 text-xl">GT Edits</span>
+      </a>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Sidebar Menu -->
+      <div id="sidebar"
+        class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
+        <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
         </button>
 
-        <!-- Sidebar Menu -->
-        <div id="sidebar" class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-            <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-
-            <nav class="flex flex-col mt-10 space-y-4">
-                <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-                <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-                <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-                <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
-            </nav>
-
-            <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-                <button class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
-                    Contact me
-                </button>
-            </a>
-        </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-            <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-            <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-            <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
+        <nav class="flex flex-col mt-10 space-y-4">
+          <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
+          <a href="About.html" class="text-white hover:text-indigo-200">About</a>
+          <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
+          <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
         </nav>
 
-        <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-            <button class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-                Contact me
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
+        <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
+          <button
+            class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
+            Contact me
+          </button>
         </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
+        <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
+        <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
+        <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
+        <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
+      </nav>
+
+      <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
+        <button
+          class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
+          Contact me
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </a>
     </div>
-</header>
+  </header>
 
   <main class="flex-grow">
     <section class="text-white body-font">
       <div class="w-full sm:p-4 px-4 mb-6 text-center mt-20">
-  <h1 class="title-font font-medium text-4xl mb-2 text-yellow-200">Tanishq Mehta</h1>
-  <div class="leading-relaxed text-2xl mb-1">
-    Popular Known as GT Edits. A passionate student, skilled editor, creative content creator, and dedicated
-    gamer, constantly exploring new ideas and pushing boundaries in both learning and entertainment.
-  </div>
+        <h1 class="title-font font-medium text-4xl mb-2 text-yellow-200">Tanishq Mehta</h1>
+        <div class="leading-relaxed text-2xl mb-1">
+          Popular Known as GT Edits. A passionate student, skilled editor, creative content creator, and dedicated
+          gamer, constantly exploring new ideas and pushing boundaries in both learning and entertainment.
+        </div>
 
 
 
-  <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
 
-  <!-- SLIDER -->
-  <div class="relative w-full md:w-1/2 max-w-xl overflow-hidden rounded-xl shadow-lg">
-    <div id="slides" class="flex transition-transform duration-700 ease-in-out">
-      <img src="./imgs/1.png" class="w-full flex-shrink-0" alt="Slide 1">
-      <img src="./imgs/2.png" class="w-full flex-shrink-0" alt="Slide 2">
-      <img src="./imgs/3.png" class="w-full flex-shrink-0" alt="Slide 3">
-    </div>
-    <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
-    <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
-  </div>
+          <!-- SLIDER -->
+          <div class="relative w-full md:w-1/2 max-w-xl overflow-hidden rounded-xl shadow-lg">
+            <div id="slides" class="flex transition-transform duration-700 ease-in-out">
+              <img src="./imgs/1.png" class="w-full flex-shrink-0" alt="Slide 1">
+              <img src="./imgs/2.png" class="w-full flex-shrink-0" alt="Slide 2">
+              <img src="./imgs/3.png" class="w-full flex-shrink-0" alt="Slide 3">
+            </div>
+            <button id="prev"
+              class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+            <button id="next"
+              class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+          </div>
 
-  <!-- STATS -->
-  <div class="flex flex-wrap justify-center gap-1 md:w-1/2">
-    <div class="p-4 w-32 text-center">
-      <h2 class="title-font font-medium text-3xl text-yellow-400">2+yrs</h2>
-      <p class="leading-relaxed">Experience</p>
-    </div>
-    <div class="p-4 w-32 text-center">
-      <h2 class="title-font font-medium text-3xl text-yellow-400">100+</h2>
-      <p class="leading-relaxed">Projects</p>
-    </div>
-    <div class="p-4 w-32 text-center">
-      <h2 class="title-font font-medium text-3xl text-yellow-400">40+</h2>
-      <p class="leading-relaxed">Clients</p>
-    </div>
-    <div class="p-4 w-32 text-center">
-      <h2 class="title-font font-medium text-3xl text-yellow-400">100+hrs</h2>
-      <p class="leading-relaxed">Gaming</p>
-    </div>
-  </div>
+          <!-- STATS -->
+          <div class="flex flex-wrap justify-center gap-1 md:w-1/2">
+            <div class="p-4 w-32 text-center">
+              <h2 class="title-font font-medium text-3xl text-yellow-400">2+yrs</h2>
+              <p class="leading-relaxed">Experience</p>
+            </div>
+            <div class="p-4 w-32 text-center">
+              <h2 class="title-font font-medium text-3xl text-yellow-400">100+</h2>
+              <p class="leading-relaxed">Projects</p>
+            </div>
+            <div class="p-4 w-32 text-center">
+              <h2 class="title-font font-medium text-3xl text-yellow-400">40+</h2>
+              <p class="leading-relaxed">Clients</p>
+            </div>
+            <div class="p-4 w-32 text-center">
+              <h2 class="title-font font-medium text-3xl text-yellow-400">100+hrs</h2>
+              <p class="leading-relaxed">Gaming</p>
+            </div>
+          </div>
 
-</div>
+        </div>
 
-<script>
-  const slides = document.getElementById("slides");
-  const totalSlides = slides.children.length;
-  let index = 0;
+        <script>
+          const slides = document.getElementById("slides");
+          const totalSlides = slides.children.length;
+          let index = 0;
 
-  document.getElementById("next").onclick = () => {
-    index = (index + 1) % totalSlides;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  };
+          document.getElementById("next").onclick = () => {
+            index = (index + 1) % totalSlides;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+          };
 
-  document.getElementById("prev").onclick = () => {
-    index = (index - 1 + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  };
+          document.getElementById("prev").onclick = () => {
+            index = (index - 1 + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+          };
 
-  setInterval(() => {
-    index = (index + 1) % totalSlides;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  }, 4000);
-</script>
+          setInterval(() => {
+            index = (index + 1) % totalSlides;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+          }, 4000);
+        </script>
 
-         
+
       </div>
     </section>
   </main>
@@ -159,11 +165,11 @@
       <p class="text-white text-sm text-center sm:text-left">© 2025 GT Edits</p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
 
-                   <a href="index.html" class="ml-3 text-white"> Home </a>
+        <a href="index.html" class="ml-3 text-white"> Home </a>
 
         <a href="https://x.com/GTTanishq22" class="ml-3 text-white">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-          viewBox="0 0 24 24">
+            viewBox="0 0 24 24">
             <path
               d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
             </path>
@@ -187,6 +193,7 @@
         </a>
       </span>
     </div>
-  </footer>  
+  </footer>
 </body>
+
 </html>

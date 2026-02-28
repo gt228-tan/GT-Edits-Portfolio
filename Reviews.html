@@ -3,306 +3,265 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DN6498BW3F');
+  </script>
 
-  gtag('config', 'G-DN6498BW3F');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="GT Edits Client Reviews — read testimonials from YouTube creators and streamers who have worked with GT Edits for video editing and thumbnail design.">
+  <title>GT Edits's Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="GTLogo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GT Edits's Reviews</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="GTLogo.ico">
-   
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-black">
-  <header class="text-white body-font bg-black">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-        <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-            
-            <span class="ml-1 text-xl">GT Edits</span>
-        </a>
+<body class="bg-black" data-page="Reviews">
 
-        <!-- Hamburger Menu for Mobile -->
-        <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
+  <!-- Shared Header -->
+  <div id="gt-header"></div>
 
-        <!-- Sidebar Menu -->
-        <div id="sidebar" class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-            <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
+  <h1 class="text-4xl text-white px-5 pt-5">Reviews</h1>
+  <a href="https://forms.gle/Bksa7wFyoA5cY15U7" target="_blank" rel="noopener noreferrer"
+    class="px-5 pt-1 text-gray-300 inline-flex items-center hover:text-indigo-400">Add your Review
+    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </a>
 
-            <nav class="flex flex-col mt-10 space-y-4">
-                <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-                <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-                <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-                <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
-            </nav>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-10 mx-auto">
 
-            <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-                <button class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
-                    Contact me
-                </button>
-            </a>
-        </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-            <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-            <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-            <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
-        </nav>
-
-        <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-            <button class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-                Contact me
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </a>
-    </div>
-</header>
-
-<!-- JavaScript for Sidebar Toggle -->
-<script>
-    const menuBtn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('closeBtn');
-
-    menuBtn.addEventListener('click', () => {
-        sidebar.classList.remove('-translate-x-full');
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.add('-translate-x-full');
-    });
-
-    // Close sidebar when clicking outside
-    window.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-            sidebar.classList.add('-translate-x-full');
-        }
-    });
-</script>
-    <p class="text-4xl text-white px-5 pt-5">Reviews</p>
-    <a href="https://forms.gle/Bksa7wFyoA5cY15U7"  class="px-5 pt-1 text-gray-300 inline-flex items-center hover:text-indigo-800">Add your Review
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </a>
-   
-    <section class="text-gray-600 body-font">
-      
-      <div class="container px-5 py-10 mx-auto">
-        <div class="flex flex-wrap -m-4 mb-10">
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-             <a href="https://www.youtube.com/@ToastyAF"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Toasty.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">He’s got crazy sight for editing and humour, especially for gaming funny highlights. Very sweet chap, gets the work done and will make you vibe.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Toaster Roaster</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@lordbathura"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Bathura.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">He is a good kid with eager knowledge to know and work around his craft a lot.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Lord Bathura</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@BloodLineYT"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Bloodline.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">He's a great person with excellent work skills. He knows exactly how to deliver the final result, whether it's editing videos or creating thumbnails, whenever a client needs it.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Bloodline</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
+      <div class="flex flex-wrap -m-4 mb-10">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@ToastyAF" target="_blank" rel="noopener noreferrer"><img
+                alt="Toaster Roaster — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Toasty.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">He's got crazy sight for editing and humour, especially for gaming
+              funny highlights. Very sweet chap, gets the work done and will make you vibe.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Toaster Roaster</h2>
+            <p class="text-gray-200">Streamer</p>
           </div>
         </div>
-
-        <div class="flex flex-wrap -m-4 mb-10">
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@niharikayay"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Nyx.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">One of the best editors in the field. I have always relied on him for all kinds of editing including videos and thumbnails. Never fails to deliver amazing work.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Niharika</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@DorpPlays"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Dorp.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">He’s having a great vision towards the work, and the way of creating new ideas over a short period of time makes his work more interesting! Gaming community needs more people like GT having such an amazing skill set! W Editor 🥂</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Dorp Plays</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@Wazzaabi"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Wasabi.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Self-motivated and skilled editor. GT takes the initiative and makes sure to deliver excellence for his clients. Only getting better! </p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Wasabi Panda</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@lordbathura" target="_blank" rel="noopener noreferrer"><img
+                alt="Lord Bathura — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Bathura.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">He is a good kid with eager knowledge to know and work around his
+              craft a lot.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Lord Bathura</h2>
+            <p class="text-gray-200">Streamer</p>
           </div>
         </div>
-
-        <div class="flex flex-wrap -m-4 mb-10">
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@ShreyPlays"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Shrey.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Down to earth guy. Good creativity , fast replies, eager to learn and grow, overall a very good editor.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Shrey Plays</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@VALCONGAMINGyt"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Valcon.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">He's very eager to learn & doesn't shy away from diff kind of editing's & challenges. His work timeline was great delivered a video faster then desired time. </p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Valcon Gaming</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 p-4">
-            <div class="h-full text-center">
-             <a href="https://www.youtube.com/@playsvaka"> <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/vaka.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Gt is one of the crazy editor i have seen,His works are truly amazing,most humble editor in IGC</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Vaka Plays</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@BloodLineYT" target="_blank" rel="noopener noreferrer"><img
+                alt="Bloodline — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Bloodline.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">He's a great person with excellent work skills. He knows exactly
+              how to deliver the final result, whether it's editing videos or creating thumbnails, whenever a client
+              needs it.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Bloodline</h2>
+            <p class="text-gray-200">Streamer</p>
           </div>
         </div>
-
-        <div class="flex flex-wrap -m-4 mb-10">
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@KillBillPandey"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/KBP.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">All 3 times I have got a thumbnail from him I got the results I wanted.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Kill Bill Pandey</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          
-          <div class="lg:w-1/3 lg:mb-0 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@D3MON07"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/D3mon.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Haven't seen the dedication like him in any editor I've met. This guy is genuine and dedicated towards his work. So big a vouch from me.</p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Prajwal</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@CaspeRMineK"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/CaspeR.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Very good and understanding knowledge </p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Casper</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-
-             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@Klurge"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Klurge.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Amazing editor 10/10 editing </p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Klurge</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div> 
-          
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.instagram.com/anmolllaroraaaa/"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Anmol.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Very nice. I like the work.  </p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Anmol Arora</h2>
-              <p class="text-gray-200">Artist</p>
-            </div>
-          </div>
-
-          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div class="h-full text-center">
-              <a href="https://www.youtube.com/@riiiiplays"><img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="clients/Logos/Riiii.jpg"></a> 
-              <p class="leading-relaxed text-blue-200">Goodboyy with great editing skills.  </p>
-              <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-              <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Riiii Plays</h2>
-              <p class="text-gray-200">Streamer</p>
-            </div>
-          </div>
-
-       
-
-
-        </div>
-        
-        
       </div>
-    </section>
 
-<footer class="text-gray-600 body-font">
-   
-    <div >
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-white text-sm text-center sm:text-left">© 2025 GT Edits 
-        
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
-                    <a href="index.html" class="ml-3 text-white"> Home </a>
-
-          <a href="https://x.com/GTTanishq22" class="ml-3 text-white">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-white">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-white">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
+      <div class="flex flex-wrap -m-4 mb-10">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@niharikayay" target="_blank" rel="noopener noreferrer"><img
+                alt="Niharika — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Nyx.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">One of the best editors in the field. I have always relied on him
+              for all kinds of editing including videos and thumbnails. Never fails to deliver amazing work.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Niharika</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@DorpPlays" target="_blank" rel="noopener noreferrer"><img
+                alt="Dorp Plays — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Dorp.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">He's having a great vision towards the work, and the way of
+              creating new ideas over a short period of time makes his work more interesting! Gaming community needs
+              more people like GT having such an amazing skill set! W Editor 🥂</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Dorp Plays</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@Wazzaabi" target="_blank" rel="noopener noreferrer"><img
+                alt="Wasabi Panda — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Wasabi.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Self-motivated and skilled editor. GT takes the initiative and
+              makes sure to deliver excellence for his clients. Only getting better!</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Wasabi Panda</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
       </div>
+
+      <div class="flex flex-wrap -m-4 mb-10">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@ShreyPlays" target="_blank" rel="noopener noreferrer"><img
+                alt="Shrey Plays — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Shrey.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Down to earth guy. Good creativity, fast replies, eager to learn
+              and grow, overall a very good editor.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Shrey Plays</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@VALCONGAMINGyt" target="_blank" rel="noopener noreferrer"><img
+                alt="Valcon Gaming — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Valcon.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">He's very eager to learn & doesn't shy away from diff kind of
+              editing's & challenges. His work timeline was great delivered a video faster than desired time.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Valcon Gaming</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@playsvaka" target="_blank" rel="noopener noreferrer"><img
+                alt="Vaka Plays — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/vaka.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">GT is one of the crazy editor I have seen. His works are truly
+              amazing, most humble editor in IGC.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Vaka Plays</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap -m-4 mb-10">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@KillBillPandey" target="_blank" rel="noopener noreferrer"><img
+                alt="Kill Bill Pandey — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/KBP.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">All 3 times I have got a thumbnail from him I got the results I
+              wanted.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Kill Bill Pandey</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@D3MON07" target="_blank" rel="noopener noreferrer"><img
+                alt="Prajwal D3mon — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/D3mon.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Haven't seen the dedication like him in any editor I've met. This
+              guy is genuine and dedicated towards his work. So big a vouch from me.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Prajwal</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@CaspeRMineK" target="_blank" rel="noopener noreferrer"><img
+                alt="Casper — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/CaspeR.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Very good and understanding knowledge.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Casper</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@Klurge" target="_blank" rel="noopener noreferrer"><img
+                alt="Klurge — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Klurge.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Amazing editor 10/10 editing.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Klurge</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.instagram.com/anmolllaroraaaa/" target="_blank" rel="noopener noreferrer"><img
+                alt="Anmol Arora — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Anmol.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Very nice. I like the work.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Anmol Arora</h2>
+            <p class="text-gray-200">Artist</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <a href="https://www.youtube.com/@riiiiplays" target="_blank" rel="noopener noreferrer"><img
+                alt="Riiii Plays — GT Edits client review"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                src="clients/Logos/Riiii.jpg" loading="lazy"></a>
+            <p class="leading-relaxed text-blue-200">Goodboy with great editing skills.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Riiii Plays</h2>
+            <p class="text-gray-200">Streamer</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </footer>
-    
-    
-    </body>
-    </html>
+  </section>
+
+  <!-- Shared Footer -->
+  <div id="gt-footer"></div>
+
+  <script src="nav.js"></script>
+</body>
+
+</html>

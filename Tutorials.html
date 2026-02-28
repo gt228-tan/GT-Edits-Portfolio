@@ -3,187 +3,99 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DN6498BW3F');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DN6498BW3F');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Free video editing tutorials by GT Edits — learn editing techniques, effects, and tips for gaming content, shorts, and reels.">
     <title>Tutorials by GT Edits</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="GTLogo.ico">
-    <!-- <link rel="stylesheet" href="styles.css" ;> -->
+    <link rel="icon" type="image/x-icon" href="GTLogo.ico">
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body class="bg-black">
-
-
-  <header class="text-white body-font bg-black">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-        <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-            
-            <span class="ml-1 text-xl">GT Edits</span>
-        </a>
-
-        <!-- Hamburger Menu for Mobile -->
-        <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-
-        <!-- Sidebar Menu -->
-        <div id="sidebar" class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-            <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-
-            <nav class="flex flex-col mt-10 space-y-4">
-                <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-                <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-                <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-                <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
-            </nav>
-
-            <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-                <button class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
-                    Contact me
-                </button>
-            </a>
-        </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-            <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-            <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-            <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
-        </nav>
-
-        <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-            <button class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-                Contact me
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </a>
-    </div>
-</header>
-
-<!-- JavaScript for Sidebar Toggle -->
-<script>
-    const menuBtn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('closeBtn');
-
-    menuBtn.addEventListener('click', () => {
-        sidebar.classList.remove('-translate-x-full');
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.add('-translate-x-full');
-    });
-
-    // Close sidebar when clicking outside
-    window.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-            sidebar.classList.add('-translate-x-full');
+    <style>
+        html {
+            scroll-behavior: smooth;
         }
-    });
-</script>
 
-      
-      <section class=" mt-0 mb=15"> 
-        <p class="text-4xl text-white px-5 pt-5">Tutorials</p>
-      <a href="https://www.youtube.com/@BTEditsGT"  class="px-5 pt-1 text-red-500 inline-flex items-center ">Subscribe to GT Edits
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </a>
-         
-        
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black" data-page="Tutorials">
+
+    <!-- Shared Header -->
+    <div id="gt-header"></div>
+
+    <section class="mt-0 mb-10">
+        <h1 class="text-4xl text-white px-5 pt-5">Tutorials</h1>
+        <a href="https://www.youtube.com/@BTEditsGT" target="_blank" rel="noopener noreferrer"
+            class="px-5 pt-1 text-red-500 inline-flex items-center">Subscribe to GT Edits
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </a>
+
         <div class="flex flex-wrap justify-left px-7 gap-6 pt-2 pb-5">
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/BM_DCd3H59A" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/BM_DCd3H59A"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/8ZYzvTDgGIQ" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/8ZYzvTDgGIQ"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/PZFN6eVFOXw" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/PZFN6eVFOXw"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/0pLwU_HrVSE" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/0pLwU_HrVSE"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/oIVswm0ilEw" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/oIVswm0ilEw"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/hUlsRqzugv4" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/hUlsRqzugv4"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/3mknDc2no1I" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/3mknDc2no1I"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/L0PFLP-1rYA" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/L0PFLP-1rYA"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/sYCuM4ixy6g" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/sYCuM4ixy6g"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="w-[15%] min-w-[200px]">
-                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/LFcFEg_keMI" allowfullscreen></iframe>
+                <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/LFcFEg_keMI"
+                    title="GT Edits Tutorial — editing tip" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
-        
     </section>
-    
-    
-   
-<footer class="text-gray-600 body-font">
-   
-    <div >
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-white text-sm text-center sm:text-left">© 2025 GT Edits 
-        
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
-                    <a href="index.html" class="ml-3 text-white"> Home </a>
 
-          <a href="https://x.com/GTTanishq22" class="ml-3 text-white">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-white">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-white">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-      </div>
-    </div>
-  </footer>
-    
-    
-    </body>
-    </html>
-   
+    <!-- Shared Footer -->
+    <div id="gt-footer"></div>
+
+    <script src="nav.js"></script>
+</body>
+
+</html>

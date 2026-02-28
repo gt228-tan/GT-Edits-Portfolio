@@ -3,17 +3,18 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DN6498BW3F');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DN6498BW3F');
+  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="GT Edits Clients — view 40+ YouTube and Instagram content creators that GT Edits has worked with, ranging from 641k to 2k subscribers.">
   <title>GT Edits's Clients</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,249 +23,414 @@
   <link rel="icon" type="image/x-icon" href="GTLogo.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
     .hover-scale {
       transition: transform 0.3s ease-in-out;
     }
+
     .hover-scale:hover {
       transform: scale(1.02);
     }
   </style>
 </head>
 
-<body class="bg-black">
-  <header class="text-white body-font bg-black">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-      <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-        <span class="ml-1 text-xl">GT Edits</span>
-      </a>
-      <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-      <div id="sidebar"
-        class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-        <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-        <nav class="flex flex-col mt-10 space-y-4">
-          <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-          <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-          <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-          <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
-        </nav>
-        <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-          <button class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
-            Contact me
-          </button>
-        </a>
-      </div>
-      <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-        <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-        <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-        <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-        <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
-      </nav>
-      <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-        <button
-          class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-          Contact me
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </a>
-    </div>
-  </header>
+<body class="bg-black" data-page="Clients">
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('closeBtn');
-    menuBtn.addEventListener('click', () => sidebar.classList.remove('-translate-x-full'));
-    closeBtn.addEventListener('click', () => sidebar.classList.add('-translate-x-full'));
-    window.addEventListener('click', (e) => {
-      if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-        sidebar.classList.add('-translate-x-full');
-      }
-    });
-  </script>
+  <!-- Shared Header -->
+  <div id="gt-header"></div>
 
   <section class="text-gray-600 body-font">
-    <p class="text-4xl text-white px-5 pt-5 mb-5">Clients</p>
+    <h1 class="text-4xl text-white px-5 pt-5 mb-5">Clients</h1>
     <div class="ml-5 mr-3">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
 
-          <a href="https://www.youtube.com/@GameStrange">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/GameStrange.png" alt=""></div>
-            <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Game Strange </h1><p class="text-sm text-red-500">641k Susbcribers</p></div></div>
-          </a>
-
-          <a href="https://www.youtube.com/@XyaaLive">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Xyaa.png" alt=""></div>
-            <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Xyaa</h1><p class="text-sm text-red-500">640k Susbcribers</p></div></div>
-          </a>
-
-        <a href="https://www.youtube.com/@SHARKSHE">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Sharkshe.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Sharkshe</h1><p class="text-sm text-red-500">532k Susbcribers</p></div></div>
-        </a>
-        
-        <a href="https://www.youtube.com/@RakaZoneGaming">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Raka.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Rakazone Gaming</h1><p class="text-sm text-red-500">506k Susbcribers</p></div></div>
+        <a href="https://www.youtube.com/@GameStrange" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/GameStrange.png"
+                alt="GameStrange YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Game Strange</h3>
+              <p class="text-sm text-red-500">641k Subscribers</p>
+            </div>
+          </div>
         </a>
 
-         <a href="https://www.youtube.com/@HydraFlick">
-           <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/HydraFlick.png" alt=""></div>
-                   <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Hydraflick</h1><p class="text-sm text-red-500">343k Susbcribers</p></div></div>
-         </a>
+        <a href="https://www.youtube.com/@XyaaLive" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Xyaa.png"
+                alt="Xyaa YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Xyaa</h3>
+              <p class="text-sm text-red-500">640k Subscribers</p>
+            </div>
+          </div>
+        </a>
 
-         <a href="https://www.youtube.com/@MilikyaMili">
-           <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Mili.png" alt=""></div>
-                   <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Mili Kya Mili</h1><p class="text-sm text-red-500">324k Susbcribers</p></div></div>
-         </a>
-        <a href="https://www.youtube.com/@AmishaSingh19">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Amisha.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Amisha Singh</h1><p class="text-sm text-red-500">249k Susbcribers</p></div></div>
+        <a href="https://www.youtube.com/@SHARKSHE" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Sharkshe.png"
+                alt="Sharkshe YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Sharkshe</h3>
+              <p class="text-sm text-red-500">532k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@KushalMahajan">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Kushal.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Kushal Mahajan</h1><p class="text-sm text-red-500">206k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@RakaZoneGaming" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Raka.png"
+                alt="Rakazone Gaming YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Rakazone Gaming</h3>
+              <p class="text-sm text-red-500">506k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@SpeRocasts">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients//Spero.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Spero Casts</h1><p class="text-sm text-red-500">133k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@HydraFlick" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/HydraFlick.png"
+                alt="HydraFlick YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Hydraflick</h3>
+              <p class="text-sm text-red-500">343k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@OfficialEupHo">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Eupho.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Eupho</h1><p class="text-sm text-red-500">104k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@MilikyaMili" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Mili.png"
+                alt="Mili Kya Mili YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Mili Kya Mili</h3>
+              <p class="text-sm text-red-500">324k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@JimmyGaming69">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Jimmy.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Jimmy Gaming</h1><p class="text-sm text-red-500">79k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@AmishaSingh19" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Amisha.png"
+                alt="Amisha Singh YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Amisha Singh</h3>
+              <p class="text-sm text-red-500">249k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@harshbanaraay7675">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/HarshBanaray.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Harsh Banaray</h1><p class="text-sm text-red-500">81k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@KushalMahajan" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Kushal.png"
+                alt="Kushal Mahajan YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Kushal Mahajan</h3>
+              <p class="text-sm text-red-500">206k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@ToastyAF">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Toasty.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Toaster Roaster</h1><p class="text-sm text-red-500">76k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@SpeRocasts" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Spero.png"
+                alt="Spero Casts YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Spero Casts</h3>
+              <p class="text-sm text-red-500">133k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@Meow16k">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Meow.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Meow16k</h1><p class="text-sm text-red-500">61k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@OfficialEupHo" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Eupho.png"
+                alt="Eupho YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Eupho</h3>
+              <p class="text-sm text-red-500">104k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@Eclairsgaming">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Eclairs.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Eclaris</h1><p class="text-sm text-red-500">53k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@JimmyGaming69" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Jimmy.png"
+                alt="Jimmy Gaming YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Jimmy Gaming</h3>
+              <p class="text-sm text-red-500">79k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@CaspeRMineK">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/CaspeR.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Casper</h1><p class="text-sm text-red-500">52k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@harshbanaraay7675" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/HarshBanaray.png"
+                alt="Harsh Banaray YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Harsh Banaray</h3>
+              <p class="text-sm text-red-500">81k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@Klurge">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Klurge.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Klurge</h1><p class="text-sm text-red-500">46k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@ToastyAF" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Toasty.png"
+                alt="Toaster Roaster YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Toaster Roaster</h3>
+              <p class="text-sm text-red-500">76k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@Regashorts12">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/RegaShorts.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Rega Shorts</h1><p class="text-sm text-red-500">44k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@Meow16k" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Meow.png"
+                alt="Meow16k YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Meow16k</h3>
+              <p class="text-sm text-red-500">61k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.instagram.com/anmolllaroraaaa/">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Anmol.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Anmol Arora</h1><p class="text-sm text-red-500">42k Followers</p></div></div>
+
+        <a href="https://www.youtube.com/@Eclairsgaming" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Eclairs.png"
+                alt="Eclaris Gaming YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Eclaris</h3>
+              <p class="text-sm text-red-500">53k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@lordbathura">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Bathura.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">LordBathura</h1><p class="text-sm text-red-500">41k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@CaspeRMineK" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/CaspeR.png"
+                alt="Casper YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Casper</h3>
+              <p class="text-sm text-red-500">52k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@very_peri">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/VeryPeri.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Very Peri</h1><p class="text-sm text-red-500">32k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@Klurge" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Klurge.png"
+                alt="Klurge YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Klurge</h3>
+              <p class="text-sm text-red-500">46k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@chhabrasaaab">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Chhabra Saab.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">ChabbraSaab</h1><p class="text-sm text-red-500">30k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@Regashorts12" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/RegaShorts.png"
+                alt="Rega Shorts YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Rega Shorts</h3>
+              <p class="text-sm text-red-500">44k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@DevilDeez">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/DevilDeez.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Devil Deez</h1><p class="text-sm text-red-500">19k Susbcribers</p></div></div>
+
+        <a href="https://www.instagram.com/anmolllaroraaaa/" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Anmol.png"
+                alt="Anmol Arora Instagram profile" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Anmol Arora</h3>
+              <p class="text-sm text-red-500">42k Followers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@SurvEcs">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Surve.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Surve</h1><p class="text-sm text-red-500">18k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@lordbathura" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Bathura.png"
+                alt="LordBathura YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">LordBathura</h3>
+              <p class="text-sm text-red-500">41k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@notyourAlexaa">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Alexaa.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Alexaa</h1><p class="text-sm text-red-500">11k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@very_peri" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/VeryPeri.png"
+                alt="Very Peri YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Very Peri</h3>
+              <p class="text-sm text-red-500">32k Subscribers</p>
+            </div>
+          </div>
         </a>
-         <a href="https://www.youtube.com/@OnlyNOTTY">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/NOTTY.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">NOTTY</h1><p class="text-sm text-red-500">10k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@chhabrasaaab" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Chhabra Saab.png"
+                alt="Chhabra Saab YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">ChabbraSaab</h3>
+              <p class="text-sm text-red-500">30k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@ShreyPlays">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Shrey Plays.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Shrey Plays</h1><p class="text-sm text-red-500">8k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@DevilDeez" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/DevilDeez.png"
+                alt="Devil Deez YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Devil Deez</h3>
+              <p class="text-sm text-red-500">19k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@niharikayay">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Nyx.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Niharika </h1><p class="text-sm text-red-500">3k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@SurvEcs" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Surve.png"
+                alt="Surve YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Surve</h3>
+              <p class="text-sm text-red-500">18k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@DorpPlays">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Dorp.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Dorp Plays</h1><p class="text-sm text-red-500">3k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@notyourAlexaa" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Alexaa.png"
+                alt="Alexaa YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Alexaa</h3>
+              <p class="text-sm text-red-500">11k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@VALCONGAMINGyt">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Valcon.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Valcon Gaming</h1><p class="text-sm text-red-500">2k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@OnlyNOTTY" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/NOTTY.png"
+                alt="NOTTY YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">NOTTY</h3>
+              <p class="text-sm text-red-500">10k Subscribers</p>
+            </div>
+          </div>
         </a>
-        <a href="https://www.youtube.com/@playsvaka">
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale"><div class="relative h-40 overflow-hidden rounded-t-2xl"><img class="absolute inset-0 w-full h-full object-cover" src="clients/Vaka.png" alt=""></div>
-          <div class="text-center px-4 py-2"><h1 class="text-xl font-bold text-gray-900 mb-1">Vaka Plays</h1><p class="text-sm text-red-500">2k Susbcribers</p></div></div>
+
+        <a href="https://www.youtube.com/@ShreyPlays" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Shrey Plays.png"
+                alt="Shrey Plays YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Shrey Plays</h3>
+              <p class="text-sm text-red-500">8k Subscribers</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@niharikayay" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Nyx.png"
+                alt="Niharika YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Niharika</h3>
+              <p class="text-sm text-red-500">3k Subscribers</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@DorpPlays" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Dorp.png"
+                alt="Dorp Plays YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Dorp Plays</h3>
+              <p class="text-sm text-red-500">3k Subscribers</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@VALCONGAMINGyt" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Valcon.png"
+                alt="Valcon Gaming YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Valcon Gaming</h3>
+              <p class="text-sm text-red-500">2k Subscribers</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@playsvaka" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+            <div class="relative h-40 overflow-hidden rounded-t-2xl"><img
+                class="absolute inset-0 w-full h-full object-cover" src="clients/Vaka.png"
+                alt="Vaka Plays YouTube channel banner" loading="lazy"></div>
+            <div class="text-center px-4 py-2">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Vaka Plays</h3>
+              <p class="text-sm text-red-500">2k Subscribers</p>
+            </div>
+          </div>
         </a>
 
       </div>
     </div>
   </section>
 
-  <footer class="text-gray-600 body-font">
-   
-    <div >
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-white text-sm text-center sm:text-left">© 2025 GT Edits 
-        
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
-                    <a href="index.html" class="ml-3 text-white"> Home </a>
+  <!-- Shared Footer -->
+  <div id="gt-footer"></div>
 
-          <a href="https://x.com/GTTanishq22" class="ml-3 text-white">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-white">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          
-          <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-white">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-      </div>
-    </div>
-  </footer>
-
+  <script src="nav.js"></script>
 </body>
 
 </html>

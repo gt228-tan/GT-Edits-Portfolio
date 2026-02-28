@@ -8,12 +8,13 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-DN6498BW3F');
   </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="GT Edits Video Portfolio — watch gaming highlights, vlogs, shorts, and Instagram reels edited by GT Edits for top YouTube creators.">
   <title>GT Edits's Video Edits</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,136 +22,74 @@
     rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="GTLogo.ico">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-black">
+<body class="bg-black" data-page="Video Editing">
 
-  <header class="text-white body-font bg-black">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-left items-center">
-      <a href="index.html" class="flex title-font font-medium items-left text-gray-200 mb-4 md:mb-0">
-        <span class="ml-1 text-xl">GT Edits</span>
-      </a>
-
-      <button id="menuBtn" class="md:hidden ml-auto text-white focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-
-      <div id="sidebar"
-        class="fixed left-0 top-0 w-64 h-full bg-black transform -translate-x-full transition-transform md:hidden p-5">
-        <button id="closeBtn" class="absolute top-4 right-4 text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-
-        <nav class="flex flex-col mt-10 space-y-4">
-          <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
-          <a href="About.html" class="text-white hover:text-indigo-200">About</a>
-          <a href="Graphics.html" class="text-white hover:text-indigo-200">Graphics</a>
-          <a href="Vid.html" class="text-white hover:text-indigo-200">Video Editing</a>
-        </nav>
-
-        <a href="https://www.instagram.com/gt._.edits/" class="mt-5 inline-block">
-          <button
-            class="w-full bg-indigo-800 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base">
-            Contact me
-          </button>
-        </a>
-      </div>
-
-      <nav class="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-        <a href="index.html" class="mr-5 hover:text-indigo-200">Home</a>
-        <a href="About.html" class="mr-5 hover:text-indigo-200">About</a>
-        <a href="Graphics.html" class="mr-5 hover:text-indigo-200">Graphics</a>
-        <a href="Vid.html" class="mr-5 hover:text-indigo-200">Video Editing</a>
-      </nav>
-
-      <a href="https://www.instagram.com/gt._.edits/" class="hidden md:inline-block">
-        <button
-          class="inline-flex items-center bg-indigo-800 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-          Contact me
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </a>
-    </div>
-  </header>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('closeBtn');
-
-    menuBtn.addEventListener('click', () => {
-      sidebar.classList.remove('-translate-x-full');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      sidebar.classList.add('-translate-x-full');
-    });
-
-    window.addEventListener('click', (e) => {
-      if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-        sidebar.classList.add('-translate-x-full');
-      }
-    });
-  </script>
-
+  <!-- Shared Header -->
+  <div id="gt-header"></div>
 
   <div class="flex items-center justify-evenly w-full h-20">
     <a href="#ghs" class="text-[#e8fa02] text-lg no-underline hover:text-white md:text-base">Gaming Highlights</a>
     <a href="#vlogs" class="text-[#e8fa02] text-lg no-underline hover:text-white md:text-base">Vlogs</a>
     <a href="#shorts" class="text-[#e8fa02] text-lg no-underline hover:text-white md:text-base">Shorts</a>
     <a href="#reels" class="text-[#e8fa02] text-lg no-underline hover:text-white md:text-base">Reels</a>
-
   </div>
-  <section id="ghs">
 
-    <p class="text-4xl text-white px-5 pt-5">Gaming Highlights</p>
-    <a href="https://www.youtube.com/playlist?list=PLqXR43RX4jZ_9xjgKtkpmEBL63tco6U1f"
-      class="px-5 pt-1 text-red-200 inline-flex items-center ">Check full Playlist
+  <section id="ghs">
+    <h2 class="text-4xl text-white px-5 pt-5">Gaming Highlights</h2>
+    <a href="https://www.youtube.com/playlist?list=PLqXR43RX4jZ_9xjgKtkpmEBL63tco6U1f" target="_blank"
+      rel="noopener noreferrer" class="px-5 pt-1 text-red-200 inline-flex items-center">Check full Playlist
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-2" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
     </a>
-
-
-
     <div class="flex flex-wrap justify-left px-5 gap-4 pt-2">
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/vRcVsKKCgfo" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/vRcVsKKCgfo" title="GT Edits — Gaming Highlight"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/SmcbNa-ItAc" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/SmcbNa-ItAc" title="GT Edits — Gaming Highlight"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/HhL4I5rmtP0" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/HhL4I5rmtP0" title="GT Edits — Gaming Highlight"
+          allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
-
     <div class="flex flex-wrap justify-left px-5 gap-4 pt-2 pb-5">
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/9n5BOeeUVZ0" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/9n5BOeeUVZ0" title="GT Edits — Gaming Highlight"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/h0oKwxc7pmI" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/h0oKwxc7pmI" title="GT Edits — Gaming Highlight"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/xC86p8N47m8" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/xC86p8N47m8" title="GT Edits — Gaming Highlight"
+          allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <hr class="border-gray-400  mx-10 mt-5">
+  <hr class="border-gray-400 mx-10 mt-5">
+
   <section id="vlogs">
-    <p class="text-4xl text-white px-5 pt-5">Vlogs</p>
-    <a href="https://www.youtube.com/playlist?list=PLqXR43RX4jZ_IqpW067Ti2WVUFPPbnEBW"
-      class="px-5 pt-1 text-red-200 inline-flex items-center ">Check full Playlist
+    <h2 class="text-4xl text-white px-5 pt-5">Vlogs</h2>
+    <a href="https://www.youtube.com/playlist?list=PLqXR43RX4jZ_IqpW067Ti2WVUFPPbnEBW" target="_blank"
+      rel="noopener noreferrer" class="px-5 pt-1 text-red-200 inline-flex items-center">Check full Playlist
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-2" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -158,29 +97,33 @@
     </a>
     <div class="flex flex-wrap justify-left px-5 gap-4 pt-2 pb-5">
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/8sE8A2EHJDw" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/8sE8A2EHJDw" title="GT Edits — Vlog"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/OLx-7hmLeWI" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/OLx-7hmLeWI" title="GT Edits — Vlog"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-[95%] sm:w-[32%]">
-        <iframe class="w-full h-56" src="https://www.youtube.com/embed/7wIKL2ociGw" allowfullscreen></iframe>
+        <iframe class="w-full h-56" src="https://www.youtube.com/embed/7wIKL2ociGw" title="GT Edits — Vlog"
+          allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <hr class="border-gray-400  mx-10 mt-5">
+  <hr class="border-gray-400 mx-10 mt-5">
+
   <section id="shorts">
-    <p class="text-4xl text-white px-5 pt-5">Shorts</p>
-    <a href="https://youtube.com/playlist?list=PLqXR43RX4jZ8tCO1X-i7CCRMnqG-1TrJO&si=3CzzxO2_JIbSL4f3"
-      class="px-5 pt-1 text-red-200 inline-flex items-center ">Check full Playlist
+    <h2 class="text-4xl text-white px-5 pt-5">Shorts</h2>
+    <a href="https://youtube.com/playlist?list=PLqXR43RX4jZ8tCO1X-i7CCRMnqG-1TrJO&si=3CzzxO2_JIbSL4f3" target="_blank"
+      rel="noopener noreferrer" class="px-5 pt-1 text-red-200 inline-flex items-center">Check full Playlist
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-2" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
     </a>
-    <a href="https://www.youtube.com/playlist?list=PLqXR43RX4jZ-EU01TuMggl0k7f4_A7sU-"
-      class="px-5 pt-1 text-red-200 inline-flex items-center ">Check Mini Vlogs
+    <a href="https://www.youtube.com/playlist?list=PLqXR43RX4jZ-EU01TuMggl0k7f4_A7sU-" target="_blank"
+      rel="noopener noreferrer" class="px-5 pt-1 text-red-200 inline-flex items-center">Check Mini Vlogs
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-2" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -188,125 +131,88 @@
     </a>
     <div class="flex flex-wrap justify-left px-7 gap-6 pt-2 pb-5">
       <div class="w-full sm:w-[30%] md:w-[15%] min-w-[200px]">
-        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/l2CzXVm1maU" allowfullscreen></iframe>
+        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/l2CzXVm1maU" title="GT Edits — Short"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-full sm:w-[30%] md:w-[15%] min-w-[200px]">
-        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/tKkPV-pe8Xc" allowfullscreen></iframe>
+        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/tKkPV-pe8Xc" title="GT Edits — Short"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-full sm:w-[30%] md:w-[15%] min-w-[200px]">
-        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/E_VyvXKH834" allowfullscreen></iframe>
+        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/E_VyvXKH834" title="GT Edits — Short"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-full sm:w-[30%] md:w-[15%] min-w-[200px]">
-        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/OyVWLikSmEU" allowfullscreen></iframe>
+        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/OyVWLikSmEU" title="GT Edits — Short"
+          allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="w-full sm:w-[30%] md:w-[15%] min-w-[200px]">
-        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/iZ-yVqhB3DE" allowfullscreen></iframe>
+        <iframe class="w-full h-[350px]" src="https://www.youtube.com/embed/iZ-yVqhB3DE" title="GT Edits — Short"
+          allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <hr class="border-gray-400  mx-10 mt-5">
+  <hr class="border-gray-400 mx-10 mt-5">
+
   <section id="reels">
-    <p class="text-4xl text-white px-5 pt-5">Reels</p>
+    <h2 class="text-4xl text-white px-5 pt-5">Reels</h2>
     <div class="flex flex-wrap justify-left px-7 gap-6 pt-2 pb-5">
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLhxgGSvmJo/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DB8sjh_RdpN/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DDFGqtPSmw0/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUVvSGwE3yO/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
     </div>
-    
   </section>
 
-  <hr class="border-gray-400  mx-10 mt-5">
+  <hr class="border-gray-400 mx-10 mt-5">
+
   <section id="techfest">
-    <p class="text-4xl text-white px-5 pt-5">Tech Fest Reels</p>
+    <h2 class="text-4xl text-white px-5 pt-5">Tech Fest Reels</h2>
     <div class="flex flex-wrap justify-left px-7 gap-6 pt-2 pb-5">
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUGQxCGiHcw/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUUvhivCD3x/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUdMhYQD60m/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUqtDEviExT/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUnmLGUjFe7/"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
       <div class="w-full sm:w-[45%] md:w-[22%] min-w-[200px] h-[520px] overflow-hidden">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUVmy_rCOhq"
-          data-instgrm-version="14" style="width:100%; margin:0;">
-        </blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUVmy_rCOhq/"
+          data-instgrm-version="14" style="width:100%; margin:0;"></blockquote>
       </div>
     </div>
   </section>
 
-  <footer class="text-gray-600 body-font">
+  <!-- Shared Footer -->
+  <div id="gt-footer"></div>
 
-    <div>
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-white text-sm text-center sm:text-left">© 2025 GT Edits
-
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-right sm:justify-start">
-
-          <a href="index.html" class="ml-3 text-white"> Home </a>
-          <a href="https://x.com/GTTanishq22" class="ml-3 text-white">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-              viewBox="0 0 24 24">
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-              </path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/gt._.edits/" class="ml-3 text-white">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tanishq-mehta-51055127b/" class="ml-3 text-white">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-      </div>
-    </div>
-  </footer>
+  <script src="nav.js"></script>
   <script async src="//www.instagram.com/embed.js"></script>
 </body>
 

@@ -1,0 +1,224 @@
+body[data-page="Assets"] {
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.assets-main {
+    padding-top: 44px;
+}
+
+.assets-header {
+    padding: 48px 32px 12px;
+}
+
+.assets-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #ff0055;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+}
+
+.assets-list {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.asset-item {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s;
+}
+
+.asset-item:last-child {
+    border-bottom: none;
+}
+
+.asset-item:hover .asset-item-name {
+    color: #ffb4cd;
+}
+
+.asset-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 8px;
+}
+
+.asset-item-info {
+    flex-grow: 1;
+}
+
+.asset-item-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+    transition: color 0.2s;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.asset-item-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.assets-suggest-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+}
+
+.assets-suggest-btn a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 36px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.assets-suggest-btn a:hover {
+    border-color: #ffffff;
+    color: #ff0055;
+}
+
+@media (max-width: 600px) {
+    .assets-header {
+        padding: 32px 16px 8px;
+    }
+
+    .assets-list {
+        padding: 24px 16px 48px;
+    }
+
+    .asset-item {
+        gap: 16px;
+    }
+
+    .asset-item img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ── Asset Detail Subpages (AnimeGIF, Brushes, etc.) ── */
+
+.asset-detail-main {
+    padding-top: 44px;
+    min-height: 70vh;
+}
+
+.asset-detail-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 24px 32px 0;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.asset-detail-back:hover {
+    color: #ff0055;
+}
+
+.asset-detail-back svg {
+    width: 14px;
+    height: 14px;
+}
+
+.asset-detail-content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 32px 64px;
+}
+
+.asset-detail-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.asset-detail-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 28px;
+}
+
+.asset-detail-preview {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 28px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+.asset-detail-preview:hover {
+    transform: scale(1.025);
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.7);
+}
+
+.asset-detail-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ff0055;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.asset-detail-download:hover {
+    background: #cc0044;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .asset-detail-back {
+        margin: 16px 16px 0;
+    }
+
+    .asset-detail-content {
+        padding: 24px 16px 48px;
+    }
+}

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,249 +15,199 @@
   <meta name="description"
     content="GT Edits Client Reviews — read testimonials from YouTube creators and streamers who have worked with GT Edits for video editing and thumbnail design.">
   <title>GT Edits's Reviews</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@1&family=Anton&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="GTLogo.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="GTLogo.ico">
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="New_CSS/reviews.css">
 </head>
 
-<body class="bg-black" data-page="Reviews">
+<body data-page="Reviews">
 
-  <!-- Shared Header -->
   <div id="gt-header"></div>
 
-  <h1 class="text-4xl text-white px-5 pt-5">Reviews</h1>
-  <a href="https://forms.gle/Bksa7wFyoA5cY15U7" target="_blank" rel="noopener noreferrer"
-    class="px-5 pt-1 text-gray-300 inline-flex items-center hover:text-indigo-400">Add your Review
-    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-      class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-      <path d="M5 12h14M12 5l7 7-7 7"></path>
-    </svg>
-  </a>
+  <main class="reviews-main">
+    <div class="reviews-header">
+      <h1 class="reviews-title">Reviews</h1>
+      <a href="https://forms.gle/Bksa7wFyoA5cY15U7" target="_blank" rel="noopener noreferrer" class="reviews-add-link">
+        Add your Review
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-10 mx-auto">
+    <div class="reviews-grid">
 
-      <div class="flex flex-wrap -m-4 mb-10">
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@ToastyAF" target="_blank" rel="noopener noreferrer"><img
-                alt="Toaster Roaster — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Toasty.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">He's got crazy sight for editing and humour, especially for gaming
-              funny highlights. Very sweet chap, gets the work done and will make you vibe.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Toaster Roaster</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@lordbathura" target="_blank" rel="noopener noreferrer"><img
-                alt="Lord Bathura — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Bathura.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">He is a good kid with eager knowledge to know and work around his
-              craft a lot.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Lord Bathura</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@BloodLineYT" target="_blank" rel="noopener noreferrer"><img
-                alt="Bloodline — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Bloodline.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">He's a great person with excellent work skills. He knows exactly
-              how to deliver the final result, whether it's editing videos or creating thumbnails, whenever a client
-              needs it.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Bloodline</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
+      <div class="review-card">
+        <a href="https://www.youtube.com/@ToastyAF" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Toasty.jpg" alt="Toaster Roaster" loading="lazy">
+        </a>
+        <p class="review-card-quote">He's got crazy sight for editing and humour, especially for gaming funny
+          highlights. Very sweet chap, gets the work done and will make you vibe.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Toaster Roaster</div>
+        <div class="review-card-role">Streamer</div>
       </div>
 
-      <div class="flex flex-wrap -m-4 mb-10">
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@niharikayay" target="_blank" rel="noopener noreferrer"><img
-                alt="Niharika — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Nyx.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">One of the best editors in the field. I have always relied on him
-              for all kinds of editing including videos and thumbnails. Never fails to deliver amazing work.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Niharika</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@DorpPlays" target="_blank" rel="noopener noreferrer"><img
-                alt="Dorp Plays — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Dorp.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">He's having a great vision towards the work, and the way of
-              creating new ideas over a short period of time makes his work more interesting! Gaming community needs
-              more people like GT having such an amazing skill set! W Editor 🥂</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Dorp Plays</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@Wazzaabi" target="_blank" rel="noopener noreferrer"><img
-                alt="Wasabi Panda — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Wasabi.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Self-motivated and skilled editor. GT takes the initiative and
-              makes sure to deliver excellence for his clients. Only getting better!</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Wasabi Panda</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
+      <div class="review-card">
+        <a href="https://www.youtube.com/@lordbathura" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Bathura.jpg" alt="Lord Bathura" loading="lazy">
+        </a>
+        <p class="review-card-quote">He is a good kid with eager knowledge to know and work around his craft a lot.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Lord Bathura</div>
+        <div class="review-card-role">Streamer</div>
       </div>
 
-      <div class="flex flex-wrap -m-4 mb-10">
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@ShreyPlays" target="_blank" rel="noopener noreferrer"><img
-                alt="Shrey Plays — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Shrey.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Down to earth guy. Good creativity, fast replies, eager to learn
-              and grow, overall a very good editor.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Shrey Plays</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@VALCONGAMINGyt" target="_blank" rel="noopener noreferrer"><img
-                alt="Valcon Gaming — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Valcon.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">He's very eager to learn & doesn't shy away from diff kind of
-              editing's & challenges. His work timeline was great delivered a video faster than desired time.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Valcon Gaming</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@playsvaka" target="_blank" rel="noopener noreferrer"><img
-                alt="Vaka Plays — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/vaka.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">GT is one of the crazy editor I have seen. His works are truly
-              amazing, most humble editor in IGC.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Vaka Plays</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
+      <div class="review-card">
+        <a href="https://www.youtube.com/@BloodLineYT" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Bloodline.jpg" alt="Bloodline" loading="lazy">
+        </a>
+        <p class="review-card-quote">He's a great person with excellent work skills. He knows exactly how to deliver the
+          final result, whether it's editing videos or creating thumbnails, whenever a client needs it.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Bloodline</div>
+        <div class="review-card-role">Streamer</div>
       </div>
 
-      <div class="flex flex-wrap -m-4 mb-10">
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@KillBillPandey" target="_blank" rel="noopener noreferrer"><img
-                alt="Kill Bill Pandey — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/KBP.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">All 3 times I have got a thumbnail from him I got the results I
-              wanted.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Kill Bill Pandey</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@D3MON07" target="_blank" rel="noopener noreferrer"><img
-                alt="Prajwal D3mon — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/D3mon.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Haven't seen the dedication like him in any editor I've met. This
-              guy is genuine and dedicated towards his work. So big a vouch from me.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Prajwal</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@CaspeRMineK" target="_blank" rel="noopener noreferrer"><img
-                alt="Casper — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/CaspeR.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Very good and understanding knowledge.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Casper</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@Klurge" target="_blank" rel="noopener noreferrer"><img
-                alt="Klurge — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Klurge.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Amazing editor 10/10 editing.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Klurge</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.instagram.com/anmolllaroraaaa/" target="_blank" rel="noopener noreferrer"><img
-                alt="Anmol Arora — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Anmol.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Very nice. I like the work.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Anmol Arora</h2>
-            <p class="text-gray-200">Artist</p>
-          </div>
-        </div>
-        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-          <div class="h-full text-center">
-            <a href="https://www.youtube.com/@riiiiplays" target="_blank" rel="noopener noreferrer"><img
-                alt="Riiii Plays — GT Edits client review"
-                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                src="clients/Logos/Riiii.jpg" loading="lazy"></a>
-            <p class="leading-relaxed text-blue-200">Goodboy with great editing skills.</p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-            <h2 class="text-yellow-200 font-medium title-font tracking-wider text-sm">Riiii Plays</h2>
-            <p class="text-gray-200">Streamer</p>
-          </div>
-        </div>
+      <div class="review-card">
+        <a href="https://www.youtube.com/@niharikayay" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Nyx.jpg" alt="Niharika" loading="lazy">
+        </a>
+        <p class="review-card-quote">One of the best editors in the field. I have always relied on him for all kinds of
+          editing including videos and thumbnails. Never fails to deliver amazing work.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Niharika</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@DorpPlays" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Dorp.jpg" alt="Dorp Plays" loading="lazy">
+        </a>
+        <p class="review-card-quote">He's having a great vision towards the work, and the way of creating new ideas over
+          a short period of time makes his work more interesting! Gaming community needs more people like GT having such
+          an amazing skill set! W Editor 🥂</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Dorp Plays</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@Wazzaabi" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Wasabi.jpg" alt="Wasabi Panda" loading="lazy">
+        </a>
+        <p class="review-card-quote">Self-motivated and skilled editor. GT takes the initiative and makes sure to
+          deliver excellence for his clients. Only getting better!</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Wasabi Panda</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@ShreyPlays" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Shrey.jpg" alt="Shrey Plays" loading="lazy">
+        </a>
+        <p class="review-card-quote">Down to earth guy. Good creativity, fast replies, eager to learn and grow, overall
+          a very good editor.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Shrey Plays</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@VALCONGAMINGyt" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Valcon.jpg" alt="Valcon Gaming" loading="lazy">
+        </a>
+        <p class="review-card-quote">He's very eager to learn & doesn't shy away from diff kind of editing's &
+          challenges. His work timeline was great delivered a video faster than desired time.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Valcon Gaming</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@playsvaka" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/vaka.jpg" alt="Vaka Plays" loading="lazy">
+        </a>
+        <p class="review-card-quote">GT is one of the crazy editor I have seen. His works are truly amazing, most humble
+          editor in IGC.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Vaka Plays</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@KillBillPandey" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/KBP.jpg" alt="Kill Bill Pandey" loading="lazy">
+        </a>
+        <p class="review-card-quote">All 3 times I have got a thumbnail from him I got the results I wanted.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Kill Bill Pandey</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@D3MON07" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/D3mon.jpg" alt="Prajwal D3mon" loading="lazy">
+        </a>
+        <p class="review-card-quote">Haven't seen the dedication like him in any editor I've met. This guy is genuine
+          and dedicated towards his work. So big a vouch from me.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Prajwal</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@CaspeRMineK" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/CaspeR.jpg" alt="Casper" loading="lazy">
+        </a>
+        <p class="review-card-quote">Very good and understanding knowledge.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Casper</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@Klurge" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Klurge.jpg" alt="Klurge" loading="lazy">
+        </a>
+        <p class="review-card-quote">Amazing editor 10/10 editing.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Klurge</div>
+        <div class="review-card-role">Streamer</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.instagram.com/anmolllaroraaaa/" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Anmol.jpg" alt="Anmol Arora" loading="lazy">
+        </a>
+        <p class="review-card-quote">Very nice. I like the work.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Anmol Arora</div>
+        <div class="review-card-role">Artist</div>
+      </div>
+
+      <div class="review-card">
+        <a href="https://www.youtube.com/@riiiiplays" target="_blank" rel="noopener noreferrer">
+          <img class="review-card-avatar" src="clients/Logos/Riiii.jpg" alt="Riiii Plays" loading="lazy">
+        </a>
+        <p class="review-card-quote">Goodboy with great editing skills.</p>
+        <span class="review-card-divider"></span>
+        <div class="review-card-name">Riiii Plays</div>
+        <div class="review-card-role">Streamer</div>
       </div>
 
     </div>
-  </section>
+  </main>
 
-  <!-- Shared Footer -->
   <div id="gt-footer"></div>
 
   <script src="nav.js"></script>

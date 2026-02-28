@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN6498BW3F"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,117 +15,89 @@
   <meta name="description"
     content="Free editing assets by GT Edits — download sound effects, brushes, Valorant McD agents, cinematic grids, anime GIFs, and film effects for your projects.">
   <title>Assets by GT Edits</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@1&family=Anton&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="GTLogo.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="GTLogo.ico">
+  <link rel="stylesheet" href="new.css">
+  <link rel="stylesheet" href="New_CSS/assets.css">
 </head>
 
-<body class="bg-black" data-page="Assets">
+<body data-page="Assets">
 
-  <!-- Shared Header -->
   <div id="gt-header"></div>
 
-  <section class="text-gray-600 body-font">
-    <h1 class="text-4xl text-yellow-200 px-5 pt-5">Assets</h1>
+  <main class="assets-main">
+    <div class="assets-header">
+      <h1 class="assets-title">Assets</h1>
+    </div>
 
-    <div class="container px-5 py-10 mx-auto">
+    <div class="assets-list">
 
-      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-          <a href="./Assets/SoundEffects.html">
-            <h2 class="text-blue-100 text-lg underline underline-offset-1 title-font font-medium mb-2">Sound Effects
-            </h2>
-          </a>
-          <p class="leading-relaxed text-base text-yellow-100">This asset contains sound effects that can level up your
-            gaming highlights.</p>
+      <a href="./Assets/SoundEffects.html" class="asset-item">
+        <img src="./imgs/SE.png" alt="Sound effects asset pack icon" loading="lazy">
+        <div class="asset-item-info">
+          <div class="asset-item-name">Sound Effects</div>
+          <p class="asset-item-desc">This asset contains sound effects that can level up your gaming highlights.</p>
         </div>
-        <a href="./Assets/SoundEffects.html"><img src="./imgs/SE.png" alt="Sound effects asset pack icon"
-            class="w-[100px]" loading="lazy"></a>
-      </div>
+      </a>
 
-      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-        <a href="./Assets/Brushes.html"><img src="./imgs/BS.png" alt="Brushes asset pack icon" class="w-[100px]"
-            loading="lazy"></a>
-        <div class="flex-grow sm:text-left text-center mt-6 ml-2 sm:mt-0">
-          <a href="./Assets/Brushes.html">
-            <h2 class="text-blue-100 text-lg underline underline-offset-1 title-font font-medium mb-2">Brushes</h2>
-          </a>
-          <p class="leading-relaxed text-base text-yellow-100">This asset contains brushes to make your graphics
-            outstanding.</p>
+      <a href="./Assets/Brushes.html" class="asset-item">
+        <img src="./imgs/BS.png" alt="Brushes asset pack icon" loading="lazy">
+        <div class="asset-item-info">
+          <div class="asset-item-name">Brushes</div>
+          <p class="asset-item-desc">This asset contains brushes to make your graphics outstanding.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-          <a href="./Assets/ValorantMcD.html">
-            <h2 class="text-blue-100 text-lg underline underline-offset-1 title-font font-medium mb-2">Valorant McD
-              Agents</h2>
-          </a>
-          <p class="leading-relaxed text-base text-yellow-100">This asset contains all the Valorant Agents in McD caps
-            and mic to showcase voicelines in your videos.</p>
+      <a href="./Assets/ValorantMcD.html" class="asset-item">
+        <img src="./imgs/VMA.png" alt="Valorant McD agents asset pack icon" loading="lazy">
+        <div class="asset-item-info">
+          <div class="asset-item-name">Valorant McD Agents</div>
+          <p class="asset-item-desc">This asset contains all the Valorant Agents in McD caps and mic to showcase
+            voicelines in your videos.</p>
         </div>
-        <a href="./Assets/ValorantMcD.html"><img src="./imgs/VMA.png" alt="Valorant McD agents asset pack icon"
-            class="w-[100px]" loading="lazy"></a>
-      </div>
+      </a>
 
-      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-        <a href="./Assets/CinematicGrid.html"><img src="imgs/CG.png" alt="Cinematic grid asset pack icon"
-            class="w-[100px]" loading="lazy"></a>
-        <div class="flex-grow sm:text-left text-center mt-6 ml-2 sm:mt-0">
-          <a href="./Assets/CinematicGrid.html">
-            <h2 class="text-blue-100 text-lg underline underline-offset-1 title-font font-medium mb-2">Cinematic Grids
-            </h2>
-          </a>
-          <p class="leading-relaxed text-base text-yellow-100">This asset contains cinematic grids that can be used to
-            make your reels aesthetic.</p>
+      <a href="./Assets/CinematicGrid.html" class="asset-item">
+        <img src="imgs/CG.png" alt="Cinematic grid asset pack icon" loading="lazy">
+        <div class="asset-item-info">
+          <div class="asset-item-name">Cinematic Grids</div>
+          <p class="asset-item-desc">This asset contains cinematic grids that can be used to make your reels aesthetic.
+          </p>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-          <a href="./Assets/AnimeGIF.html">
-            <h2 class="text-blue-100 text-lg underline underline-offset-1 title-font font-medium mb-2">Anime GIFs</h2>
-          </a>
-          <p class="leading-relaxed text-base text-yellow-100">This asset contains 60 Anime GIFs that are easy to use in
-            your projects.</p>
+      <a href="./Assets/AnimeGIF.html" class="asset-item">
+        <img src="./imgs/AG.png" alt="Anime GIFs asset pack icon" loading="lazy">
+        <div class="asset-item-info">
+          <div class="asset-item-name">Anime GIFs</div>
+          <p class="asset-item-desc">This asset contains 60 Anime GIFs that are easy to use in your projects.</p>
         </div>
-        <a href="./Assets/AnimeGIF.html"><img src="./imgs/AG.png" alt="Anime GIFs asset pack icon" class="w-[100px]"
-            loading="lazy"></a>
-      </div>
+      </a>
 
-      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-        <a href="./Assets/FilmEffects.html"><img src="./imgs/FE.png" alt="Film effects asset pack icon"
-            class="w-[100px]" loading="lazy"></a>
-        <div class="flex-grow sm:text-left text-center mt-6 ml-2 sm:mt-0">
-          <a href="./Assets/FilmEffects.html">
-            <h2 class="text-blue-100 text-lg underline underline-offset-1 title-font font-medium mb-2">Film Effects</h2>
-          </a>
-          <p class="leading-relaxed text-base text-yellow-100">This asset contains 11 film effect transitions that are
-            easy to use in your projects.</p>
+      <a href="./Assets/FilmEffects.html" class="asset-item">
+        <img src="./imgs/FE.png" alt="Film effects asset pack icon" loading="lazy">
+        <div class="asset-item-info">
+          <div class="asset-item-name">Film Effects</div>
+          <p class="asset-item-desc">This asset contains 11 film effect transitions that are easy to use in your
+            projects.</p>
         </div>
-      </div>
+      </a>
 
+    </div>
+
+    <div class="assets-suggest-btn">
       <a href="https://forms.gle/xMabfEGkdGTxbsWb6" target="_blank" rel="noopener noreferrer">
-        <button
-          class="flex mx-auto mt-10 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Assets
-          Suggestion</button>
+        Assets Suggestion
       </a>
     </div>
-  </section>
+  </main>
 
-  <!-- Shared Footer -->
   <div id="gt-footer"></div>
 
   <script src="nav.js"></script>

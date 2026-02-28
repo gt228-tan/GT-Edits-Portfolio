@@ -1,0 +1,82 @@
+body[data-page="Tutorials"] {
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.tutorials-main {
+    padding-top: 44px;
+}
+
+.tutorials-header {
+    padding: 48px 32px 8px;
+}
+
+.tutorials-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+.tutorials-subscribe-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #ff4444;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tutorials-subscribe-link:hover {
+    color: #ff6666;
+}
+
+.tutorials-subscribe-link svg {
+    width: 14px;
+    height: 14px;
+}
+
+.tutorials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 28px 32px 64px;
+    justify-content: flex-start;
+}
+
+.tutorial-card {
+    width: 200px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.tutorial-card iframe {
+    width: 100%;
+    height: 350px;
+    display: block;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .tutorials-header {
+        padding: 32px 16px 8px;
+    }
+
+    .tutorials-grid {
+        padding: 20px 16px 48px;
+        justify-content: center;
+    }
+
+    .tutorial-card {
+        width: 100%;
+        max-width: 340px;
+    }
+}

@@ -1,0 +1,120 @@
+body[data-page="Clients"] {
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* ── Page Header ── */
+.clients-page-main {
+    padding-top: 44px;
+}
+
+.clients-page-section {
+    padding: 32px 20px 64px;
+}
+
+.clients-page-heading {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #ffffff;
+    padding: 20px 0 20px;
+    letter-spacing: 0.02em;
+}
+
+/* ── Grid ── */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    margin: 0 12px;
+}
+
+@media (max-width: 1200px) {
+    .clients-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin: 0 4px;
+    }
+}
+
+@media (max-width: 380px) {
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Client Card ── */
+.client-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.client-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Card Banner ── */
+.client-card-banner {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.client-card-banner img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.client-card:hover .client-card-banner img {
+    transform: scale(1.06);
+}
+
+/* ── Card Body ── */
+.client-card-body {
+    text-align: center;
+    padding: 10px 16px 12px;
+}
+
+.client-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.client-card-subs {
+    font-size: 0.78rem;
+    color: #e00;
+    font-weight: 600;
+}

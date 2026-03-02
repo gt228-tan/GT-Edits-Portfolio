@@ -18,6 +18,11 @@
   const headerHTML = `
 <nav class="gt-navbar">
   <a href="${base}index.html" class="gt-logo">GT EDITS</a>
+  <div class="navnav">
+    <a href="${base}index.html" class="gt-nav">Home</a>
+    <a href="${base}Graphics.html" class="gt-nav">Graphics</a>
+    <a href="${base}vid.html" class="gt-nav">Video Editing</a>
+  </div>
   <button class="gt-hamburger" id="gt-open-menu" aria-label="Open menu">
     <span></span>
     <span></span>

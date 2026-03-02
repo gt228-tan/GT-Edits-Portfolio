@@ -43,6 +43,37 @@ body {
   text-decoration: none;
 }
 
+.navnav {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  gap: 20px;
+  margin-left: 70%;
+  justify-content: space-between;
+}
+
+.gt-nav {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  color: #ff0055;
+  text-decoration: none;
+
+}
+
+@media (min-width: 769px) {
+  .gt-hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navnav {
+    display: none;
+  }
+}
+
+
+
 .gt-logo span {
   color: var(--blue);
 }
@@ -496,6 +527,24 @@ body {
   gap: 12px;
 }
 
+@media (max-width: 768px) {
+  .gt-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .gt-footer-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .gt-footer-copy {
+    text-align: left;
+  }
+}
+
 .gt-footer-logo {
   font-family: 'Anton', sans-serif;
   font-size: 1.1rem;
@@ -556,4 +605,3 @@ body {
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
-

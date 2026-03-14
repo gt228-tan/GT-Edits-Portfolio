@@ -11,7 +11,7 @@ body[data-page="Video Editing"] {
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    padding: 14px 24px;
+    padding: 12px 24px;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -159,9 +159,64 @@ body[data-page="Video Editing"] {
     margin: 0 32px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .vid-grid--3 {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .vid-grid--3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vid-section {
+        padding: 32px 16px 16px;
+    }
+
+    .vid-filter-nav {
+        gap: 6px;
+        padding: 10px 12px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+
+    .vid-filter-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .vid-filter-link {
+        flex-shrink: 0;
+    }
+
+    .vid-grid--shorts,
+    .vid-grid--reels {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .vid-grid--shorts::-webkit-scrollbar,
+    .vid-grid--reels::-webkit-scrollbar {
+        display: none;
+    }
+
+    .vid-card--portrait {
+        width: 160px;
+        height: 285px;
+    }
+
+    .vid-card--reel {
+        width: 160px;
+        height: 330px;
+    }
+
+    .vid-divider {
+        margin: 0 16px;
     }
 }
 

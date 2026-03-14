@@ -11,7 +11,7 @@ body[data-page="Graphics"] {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  padding: 14px 24px;
+  padding: 12px 24px;
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -101,13 +101,13 @@ body[data-page="Graphics"] {
   margin: 0 32px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .gfx-grid--4 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gfx-grid--5 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gfx-grid--3 {
@@ -115,7 +115,7 @@ body[data-page="Graphics"] {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .gfx-grid--4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -125,7 +125,7 @@ body[data-page="Graphics"] {
   }
 
   .gfx-grid--3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .gfx-section {
@@ -134,11 +134,34 @@ body[data-page="Graphics"] {
 
   .gfx-filter-nav {
     gap: 6px;
-    padding: 12px 16px;
+    padding: 10px 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .gfx-filter-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .gfx-filter-link {
-    font-size: 0.6rem;
-    padding: 6px 12px;
+    flex-shrink: 0;
+  }
+
+  .gfx-divider {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .gfx-grid--4,
+  .gfx-grid--5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gfx-grid--3 {
+    grid-template-columns: 1fr;
   }
 }

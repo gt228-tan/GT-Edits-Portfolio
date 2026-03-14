@@ -1,6 +1,46 @@
 :root {
   --blue: #2020ff;
   --blue-dark: #1414cc;
+  --red: #ff0055;
+
+  /* Light theme tokens */
+  --bg: #ffffff;
+  --bg-section: #ffffff;
+  --bg-stats: #ffffffeb;
+  --color-text: #000000;
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --navbar-border: rgba(0, 0, 0, 0.06);
+  --logo-color: #000000;
+  --footer-bg: #000000;
+  --footer-color: #ffffff;
+  --section-label-color: #000000;
+  --work-card-bg: #111111;
+  --video-card-bg: #111111;
+  --contact-cta-bg: #ffffff;
+  --contact-cta-color: #000000;
+  --cta-btn-bg: #000000;
+  --cta-btn-color: #ffffff;
+  --explore-link-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg: #0d0d0d;
+  --bg-section: #111111;
+  --bg-stats: #161616;
+  --color-text: #f0f0f0;
+  --navbar-bg: rgba(13, 13, 13, 0.92);
+  --navbar-border: rgba(255, 255, 255, 0.07);
+  --logo-color: #ffffff;
+  --footer-bg: #000000;
+  --footer-color: #ffffff;
+  --section-label-color: #f0f0f0;
+  --work-card-bg: #1e1e1e;
+  --video-card-bg: #1e1e1e;
+  --contact-cta-bg: #111111;
+  --contact-cta-color: #f0f0f0;
+  --cta-btn-bg: #f0f0f0;
+  --cta-btn-color: #000000;
+  --explore-link-color: #f0f0f0;
 }
 
 * {
@@ -15,9 +55,10 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #fff;
-  color: #000;
+  background: var(--bg);
+  color: var(--color-text);
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .gt-navbar {
@@ -29,27 +70,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 8px;
-  background: rgba(255, 255, 255, 0.92);
+  padding: 3px 8px;
+  background: var(--navbar-bg);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--navbar-border);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .gt-logo {
   font-family: 'Anton', sans-serif;
   font-size: 1.4rem;
   letter-spacing: 1px;
-  color: #000;
+  color: var(--logo-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+
 
 .navnav {
   display: flex;
   align-items: center;
   padding: 10px 8px;
   gap: 20px;
-  margin-left: 70%;
-  justify-content: space-between;
+  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .gt-nav {
@@ -92,7 +137,7 @@ body {
   display: block;
   width: 24px;
   height: 2px;
-  background: #000;
+  background: var(--logo-color);
   transition: all 0.3s;
 }
 
@@ -269,7 +314,8 @@ body {
 
 .work-preview {
   padding: 64px 32px;
-  background: #fff;
+  background: var(--bg-section);
+  transition: background 0.3s ease;
 }
 
 .section-label {
@@ -277,8 +323,9 @@ body {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--section-label-color);
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .work-grid {
@@ -298,7 +345,8 @@ body {
   overflow: hidden;
   border-radius: 12px;
   aspect-ratio: 16 / 9;
-  background: #111;
+  background: var(--work-card-bg);
+  transition: background 0.3s ease;
 }
 
 .work-card img {
@@ -336,7 +384,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--explore-link-color);
   text-decoration: none;
   border-bottom: 2px solid var(--blue);
   padding-bottom: 2px;
@@ -348,12 +396,13 @@ body {
 }
 
 .stats-bar {
-  background: #ffffffeb;
+  background: var(--bg-stats);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 0;
   padding: 40px 32px;
+  transition: background 0.3s ease;
 }
 
 .stat-item {
@@ -381,7 +430,8 @@ body {
 
 .video-preview {
   padding: 64px 32px;
-  background: #fff;
+  background: var(--bg-section);
+  transition: background 0.3s ease;
 }
 
 .video-grid {
@@ -399,7 +449,8 @@ body {
 .video-card {
   border-radius: 12px;
   overflow: hidden;
-  background: #111;
+  background: var(--video-card-bg);
+  transition: background 0.3s ease;
 }
 
 .video-card iframe {
@@ -480,10 +531,11 @@ body {
 }
 
 .contact-cta {
-  background: #ffffff;
+  background: var(--contact-cta-bg);
   padding: 28px 32px;
   text-align: center;
-  color: #000000;
+  color: var(--contact-cta-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .contact-cta .tagline {
@@ -499,8 +551,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #000000;
-  color: #ffffff;
+  background: var(--cta-btn-bg);
+  color: var(--cta-btn-color);
   font-weight: 800;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
@@ -508,11 +560,12 @@ body {
   padding: 16px 40px;
   border-radius: 100px;
   text-decoration: none;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, transform 0.15s, color 0.3s ease;
 }
 
 .cta-btn-white:hover {
-  background: #050505;
+  background: var(--red);
+  color: #fff;
   transform: translateY(-2px);
 }
 

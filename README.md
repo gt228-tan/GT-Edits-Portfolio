@@ -81,17 +81,18 @@ GT-Edits-Portfolio/
 
 ### Frontend
 - **HTML5** - Semantic markup
-- **TailwindCSS** - Utility-first CSS framework (via CDN)
-- **Vanilla JavaScript** - Interactive elements
-- **Google Fonts** - Montserrat typography
+- **Vanilla CSS** - Custom global stylesheet (`new.css`) + per-page overrides (`New_CSS/`)
+- **Vanilla JavaScript** - Interactive elements & shared nav/footer injection (`nav.js`)
+- **Google Fonts** - Montserrat, Anton, Playfair Display
 
 ### Features
 - ✨ Fully responsive design (mobile-first)
-- 📱 Hamburger menu for mobile navigation
-- 🎞️ Image slider with auto-rotation
-- 📊 Google Analytics integration
-- 🎬 Embedded YouTube videos
-- 🔗 Social media integration
+- 📱 Slide-in hamburger menu for mobile navigation
+- 🎞️ Image slider with auto-rotation on the About page
+- 📊 Google Analytics 4 (GA4) integration on all pages
+- 🎬 Embedded YouTube videos (portfolio & tutorials)
+- 🔗 Social media integration (Instagram, Twitter/X, LinkedIn)
+- 🧩 Shared header & footer via `nav.js` IIFE (no build step required)
 
 ---
 
@@ -149,16 +150,16 @@ No build tools or dependencies required! This is a static website.
 ## 🎨 Design Features
 
 ### Color Scheme
-- **Primary:** Black background (`#000000`)
-- **Accent:** Indigo (`#4F46E5`, `#3730A3`)
-- **Highlights:** Yellow (`#FEF08A`, `#e8fa02`)
-- **Links:** Blue (`#BFDBFE`, `#93C5FD`)
+- **Background:** Black (`#000000`) on content pages; White (`#ffffff`) on homepage sections
+- **Brand Red:** `#ff0055` — used for the hero title, nav link hover, and CTA button
+- **Brand Blue:** `#2020ff` — used for explore links and border accents
+- **Navbar:** Frosted glass white (`rgba(255,255,255,0.92)`) with `backdrop-filter: blur`
+- **Footer:** Solid black (`#000000`) with white text
 
 ### Responsive Breakpoints
 - **Mobile:** < 640px
 - **Tablet:** 640px - 768px
-- **Desktop:** 768px - 1024px
-- **Large Desktop:** 1024px+
+- **Desktop:** > 768px (hamburger hidden, desktop nav shown)
 
 ### Interactive Elements
 - Slide-in mobile navigation
@@ -225,20 +226,13 @@ Looking for professional video editing or graphic design services?
 
 ---
 
-## 🙏 Acknowledgments
 
-- **TailwindCSS** - For the amazing utility-first CSS framework
-- **Google Fonts** - For the Montserrat font family
-- **All Clients** - For trusting GT Edits with their content
-- **Community** - For support and feedback
-
----
 
 ## 📞 Support
 
 If you have any questions or need support:
 
-- 📧 **Email:** Contact via Instagram DM
+- 📧 **Email:** [gtbtbhay22@gmail.com]
 - 💬 **Instagram:** [@gt._.edits](https://www.instagram.com/gt._.edits/)
 - 🐦 **Twitter:** [@GTTanishq22](https://x.com/GTTanishq22)
 

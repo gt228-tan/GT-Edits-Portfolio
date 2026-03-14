@@ -23,6 +23,7 @@
     <a href="${base}Graphics.html" class="gt-nav">Graphics</a>
     <a href="${base}Vid.html" class="gt-nav">Video Editing</a>
   </div>
+
   <button class="gt-hamburger" id="gt-open-menu" aria-label="Open menu">
     <span></span>
     <span></span>
@@ -102,5 +103,27 @@
     openBtn.addEventListener('click', openMenu);
     closeBtn.addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
+  }
+
+  // ── Theme Toggle ──
+  const html = document.documentElement;
+  const themeBtn = document.getElementById('gt-theme-toggle');
+
+  // Apply saved preference immediately (before paint)
+  if (localStorage.getItem('gt-theme') === 'dark') {
+    html.setAttribute('data-theme', 'dark');
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('gt-theme', 'light');
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        localStorage.setItem('gt-theme', 'dark');
+      }
+    });
   }
 })();

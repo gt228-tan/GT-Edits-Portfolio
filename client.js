@@ -34,8 +34,22 @@ async function loadClientsRealtime() {
             }
             // If clients is an object, convert to array
             let clientList = Array.isArray(clients) ? clients : Object.values(clients);
-            // Sort by 'order' field (ascending)
-            clientList = clientList.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+              // Sort by 'subscribers' count (descending)
+              clientList = clientList.sort((a, b) => {
+                  // Extract numeric value from subscribers string (e.g., '67k', '2k')
+                  const parseSubs = (subs) => {
+                      if (typeof subs === 'string') {
+                          const match = subs.match(/(\d+(?:\.\d+)?)([kK]?)/);
+                          if (match) {
+                              let num = parseFloat(match[1]);
+                              if (match[2].toLowerCase() === 'k') num *= 1000;
+                              return num;
+                          }
+                      }
+                      return typeof subs === 'number' ? subs : 0;
+                  };
+                  return parseSubs(b.subscribers) - parseSubs(a.subscribers);
+              });
             clientList.forEach((client) => {
                 grid.innerHTML += `
                     <a href="${client.url}" target="_blank" rel="noopener noreferrer" class="client-card-link">
@@ -65,15 +79,34 @@ async function loadClients() {
     grid.innerHTML = `<p class="text-white text-center col-span-5">Loading clients...</p>`;
 
     try {
-        // Query: get all clients ordered by 'order' field
-        const q = query(collection(db, "clients"), orderBy("order"));
+        // Query: get all clients
+        const q = query(collection(db, "clients"));
         const snapshot = await getDocs(q);
 
-        grid.innerHTML = ""; 
+        grid.innerHTML = "";
 
+        // Collect all clients into an array
+        let clientList = [];
         snapshot.forEach((doc) => {
-            const client = doc.data();
-              grid.innerHTML += `
+            clientList.push(doc.data());
+        });
+
+        // Sort by 'subscribers' count (descending)
+        const parseSubs = (subs) => {
+            if (typeof subs === 'string') {
+                const match = subs.match(/(\d+(?:\.\d+)?)([kK]?)/);
+                if (match) {
+                    let num = parseFloat(match[1]);
+                    if (match[2].toLowerCase() === 'k') num *= 1000;
+                    return num;
+                }
+            }
+            return typeof subs === 'number' ? subs : 0;
+        };
+        clientList = clientList.sort((a, b) => parseSubs(b.subscribers) - parseSubs(a.subscribers));
+
+        clientList.forEach((client) => {
+            grid.innerHTML += `
                 <a href="${client.url}" target="_blank" rel="noopener noreferrer" class="client-card-link">
                   <div class="client-card">
                     <div class="client-card-banner">
@@ -81,14 +114,14 @@ async function loadClients() {
                     </div>
                     <div class="client-card-body">
                       <p class="client-card-name">${client.name}</p>
-                      <p class="client-card-subs">${client.subscribers}</p>
+                      <p class="client-card-subs">${client.subscribers} subscribers</p>
                     </div>
                   </div>
                 </a>
               `;
         });
 
-        if (snapshot.empty) {
+        if (clientList.length === 0) {
             grid.innerHTML = `<p class="text-white text-center col-span-5">No clients found.</p>`;
         }
 

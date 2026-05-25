@@ -17,9 +17,9 @@ body[data-page="Reviews"] {
 }
 
 .reviews-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(2rem, 5vw, 3.2rem);
-    color: #fff;
+    color: #FEC107;
     letter-spacing: 0.02em;
 }
 
@@ -37,7 +37,7 @@ body[data-page="Reviews"] {
 }
 
 .reviews-add-link:hover {
-    color: #ffacc8;
+    color: #ffeeba;
 }
 
 .reviews-add-link svg {
@@ -67,7 +67,7 @@ body[data-page="Reviews"] {
 }
 
 .review-card:hover {
-    border-color: #ff96b9;
+    border-color: #ffeeba;
     transform: translateY(-3px);
 }
 
@@ -103,7 +103,7 @@ body[data-page="Reviews"] {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #ff0055;
+    color: #FEC107;
     margin-bottom: 4px;
 }
 

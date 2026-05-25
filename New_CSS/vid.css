@@ -45,7 +45,7 @@ body[data-page="Video Editing"] {
 }
 
 .vid-section-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     color: #fff;
     letter-spacing: 0.02em;
@@ -56,7 +56,7 @@ body[data-page="Video Editing"] {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: #ffaaaa;
+    color: #ffeeba;
     text-decoration: none;
     font-size: 0.72rem;
     font-weight: 700;

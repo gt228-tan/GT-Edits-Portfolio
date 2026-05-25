@@ -16,9 +16,9 @@ body[data-page="About"] {
 }
 
 .about-name {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(2rem, 6vw, 3.5rem);
-    color: #ffffff;
+    color: #FEC107;
     margin-bottom: 16px;
     letter-spacing: 0.02em;
 }
@@ -112,9 +112,9 @@ body[data-page="About"] {
 }
 
 .about-stat-num {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
-    color: #ff0055;
+    color: #FEC107;
     display: block;
     line-height: 1;
 }

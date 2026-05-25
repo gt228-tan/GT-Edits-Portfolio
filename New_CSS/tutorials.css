@@ -13,9 +13,9 @@ body[data-page="Tutorials"] {
 }
 
 .tutorials-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(2rem, 5vw, 3.2rem);
-    color: #fff;
+    color: #FEC107;;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
 }
@@ -24,7 +24,7 @@ body[data-page="Tutorials"] {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: #ff4444;
+    color: #ffffff;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -34,7 +34,7 @@ body[data-page="Tutorials"] {
 }
 
 .tutorials-subscribe-link:hover {
-    color: #ff6666;
+    color: #ffeeba;
 }
 
 .tutorials-subscribe-link svg {

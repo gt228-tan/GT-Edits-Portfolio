@@ -45,7 +45,7 @@ body[data-page="Graphics"] {
 }
 
 .gfx-section-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   color: #f5e288;
   letter-spacing: 0.02em;

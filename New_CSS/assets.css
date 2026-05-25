@@ -13,9 +13,9 @@ body[data-page="Assets"] {
 }
 
 .assets-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(2rem, 5vw, 3.2rem);
-    color: #ff0055;
+    color: #FEC107;
     letter-spacing: 0.02em;
     margin-bottom: 4px;
 }
@@ -45,7 +45,7 @@ body[data-page="Assets"] {
 }
 
 .asset-item:hover .asset-item-name {
-    color: #ffb4cd;
+    color: #ffeeba;
 }
 
 .asset-item img {
@@ -103,7 +103,7 @@ body[data-page="Assets"] {
 
 .assets-suggest-btn a:hover {
     border-color: #ffffff;
-    color: #ff0055;
+    color: #ffeeba;
 }
 
 @media (max-width: 600px) {
@@ -147,7 +147,7 @@ body[data-page="Assets"] {
 }
 
 .asset-detail-back:hover {
-    color: #ff0055;
+    color: #ffeeba;
 }
 
 .asset-detail-back svg {
@@ -162,7 +162,7 @@ body[data-page="Assets"] {
 }
 
 .asset-detail-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: clamp(2rem, 5vw, 3rem);
     color: #fff;
     letter-spacing: 0.02em;
@@ -194,8 +194,8 @@ body[data-page="Assets"] {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #ff0055;
-    color: #fff;
+    background: #FEC107;
+    color: #003152;
     font-weight: 800;
     font-size: 0.78rem;
     letter-spacing: 0.12em;
@@ -209,7 +209,8 @@ body[data-page="Assets"] {
 }
 
 .asset-detail-download:hover {
-    background: #cc0044;
+    background: #003152;
+    color: #ffffff;
     transform: translateY(-2px);
 }
 

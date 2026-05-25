@@ -1,29 +1,29 @@
 :root {
   --blue: #2020ff;
   --blue-dark: #1414cc;
-  --red: #ff0055;
+  --red: #ffffff;
 
   /* Light theme tokens */
-  --bg: #ffffff;
-  --bg-section: #ffffff;
+  --bg: #003152;
+  --bg-section: #003152;
   --bg-stats: #ffffffeb;
-  --color-text: #000000;
-  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --color-text: #FEC107;
+  --navbar-bg: #001729;
   --navbar-border: rgba(0, 0, 0, 0.06);
-  --logo-color: #000000;
+  --logo-color: #ffffff;
   --footer-bg: #000000;
   --footer-color: #ffffff;
-  --section-label-color: #000000;
+  --section-label-color: #FEC107;
   --work-card-bg: #111111;
   --video-card-bg: #111111;
   --contact-cta-bg: #ffffff;
   --contact-cta-color: #000000;
   --cta-btn-bg: #000000;
   --cta-btn-color: #ffffff;
-  --explore-link-color: #000000;
+  --explore-link-color: #ffffff;
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --bg: #0d0d0d;
   --bg-section: #111111;
   --bg-stats: #161616;
@@ -41,7 +41,7 @@
   --cta-btn-bg: #f0f0f0;
   --cta-btn-color: #000000;
   --explore-link-color: #f0f0f0;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -54,7 +54,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   background: var(--bg);
   color: var(--color-text);
   overflow-x: hidden;
@@ -78,7 +78,7 @@ body {
 }
 
 .gt-logo {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: 1.4rem;
   letter-spacing: 1px;
   color: var(--logo-color);
@@ -98,9 +98,9 @@ body {
 }
 
 .gt-nav {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: 18px;
-  color: #ff0055;
+  color: #ffffff;
   text-decoration: none;
 
 }
@@ -170,11 +170,11 @@ body {
 }
 
 .gt-mobile-menu a:hover {
-  color: #ff0055;
+  color: #FEC107;
 }
 
 .gt-mobile-contact {
-  color: #ff0055;
+  color: #FEC107;
   margin-top: auto;
 }
 
@@ -230,9 +230,9 @@ body {
 }
 
 .hero-editor {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: clamp(5rem, 18vw, 16rem);
-  color: #ff0055eb;
+  color: #FEC107;
   letter-spacing: -0.02em;
   line-height: 0.85;
   display: block;
@@ -285,9 +285,9 @@ body {
 .hero-cta {
   display: inline-flex;
   align-items: center;
-  background: #ff0055eb;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  background: #FEC107;
+  color: #003152;
+  font-family: 'Pixelify Sans', sans-serif;
   font-weight: 800;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
@@ -310,6 +310,7 @@ body {
 .hero-cta:hover {
   background: var(--blue-dark);
   transform: translateY(-2px);
+  color: #fff;
 }
 
 .work-preview {
@@ -386,13 +387,13 @@ body {
   text-transform: uppercase;
   color: var(--explore-link-color);
   text-decoration: none;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid #ffeeba;;
   padding-bottom: 2px;
   transition: color 0.2s;
 }
 
 .work-explore-link:hover {
-  color: var(--blue);
+  color: #ffeeba;
 }
 
 .stats-bar {
@@ -411,7 +412,7 @@ body {
 }
 
 .stat-num {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: clamp(2.5rem, 6vw, 4rem);
   color: #000000;
   display: block;
@@ -564,13 +565,13 @@ body {
 }
 
 .cta-btn-white:hover {
-  background: var(--red);
+  background: #003152;
   color: #fff;
   transform: translateY(-2px);
 }
 
 .gt-footer {
-  background: #000;
+  background: #001729;
   color: #fff;
   padding: 28px 32px;
   display: flex;
@@ -599,7 +600,7 @@ body {
 }
 
 .gt-footer-logo {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
@@ -642,7 +643,7 @@ body {
 }
 
 .gt-footer-social a:hover {
-  color: #ff0055;
+  color: #FEC107;
 }
 
 .gt-footer-social svg {

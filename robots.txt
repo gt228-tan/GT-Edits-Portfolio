@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /Files/
+Disallow: /.git/
+
+Sitemap: https://gt228-tan.github.io/GT-Edits-Portfolio/sitemap.xml
